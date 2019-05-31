@@ -1,0 +1,556 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="c55e964d-04f9-40ce-99ce-a15149ba935f" name="Default Changelist" comment="" />
+    <ignored path="$PROJECT_DIR$/out/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/tieto/training/RunArrayHandler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="11" column="48" selection-start-line="11" selection-start-column="48" selection-end-line="11" selection-end-column="48" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/tieto/training/ArrayHandler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="214">
+              <caret line="56" column="39" lean-forward="true" selection-start-line="56" selection-start-column="39" selection-end-line="56" selection-end-column="39" />
+              <folding>
+                <element signature="e#7297#7298#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/com/tieto/training/ArrayHandlerTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="128">
+              <caret line="28" selection-start-line="28" selection-end-line="28" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JUnit5 Test Class" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>private</find>
+      <find>doub</find>
+    </findStrings>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/com/tieto/training/Cat.java" />
+        <option value="$PROJECT_DIR$/src/com/tieto/training/GetMaxFromArray.java" />
+        <option value="$PROJECT_DIR$/src/com/tieto/training/ArrayHandlerTest.java" />
+        <option value="$PROJECT_DIR$/src/test/ArrayHandlerTest.java" />
+        <option value="$PROJECT_DIR$/test/ArrayHandlerTest.java" />
+        <option value="$PROJECT_DIR$/src/com/tieto/training/Hello.java" />
+        <option value="$PROJECT_DIR$/src/com/tieto/training/RunArrayHandler.java" />
+        <option value="$PROJECT_DIR$/test/com/tieto/training/ArrayHandlerMaxNTest.java" />
+        <option value="$PROJECT_DIR$/test/com/tieto/training/ArrayHandlerTest.java" />
+        <option value="$PROJECT_DIR$/src/com/tieto/training/ArrayHandler.java" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1382" />
+    <option name="height" value="784" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="lesson01ide" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lesson01ide" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="lesson01ide" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lesson01ide" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="lesson01ide" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lesson01ide" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="training" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="lesson01ide" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lesson01ide" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="lesson01ide" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lesson01ide" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="training" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
+    <property name="create.test.in.the.same.root" value="true" />
+    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.tieto.training" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Coding\JavaTieto\lesson01ide" />
+      <recent name="C:\Coding\JavaTieto\lesson01ide\src" />
+      <recent name="C:\Coding\JavaTieto\lesson01ide\test" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="JUnit.ArrayHandlerTest (1)">
+    <configuration name="RunArrayHandler / The array contain only negative values" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="com.tieto.training.RunArrayHandler" />
+      <module name="lesson01ide" />
+      <option name="PROGRAM_PARAMETERS" value="-17.78 -11.6 -2 -140 -17.3" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RunArrayHandler / The array contains all the elements the same" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="com.tieto.training.RunArrayHandler" />
+      <module name="lesson01ide" />
+      <option name="PROGRAM_PARAMETERS" value="17.78 17.78 17.78 17.78 17.78" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RunArrayHandler / The array contains only positive values" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="com.tieto.training.RunArrayHandler" />
+      <module name="lesson01ide" />
+      <option name="PROGRAM_PARAMETERS" value="17.78 11.6 2 140 17.3" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RunArrayHandler / The array contains the maximum element as the first" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="com.tieto.training.RunArrayHandler" />
+      <module name="lesson01ide" />
+      <option name="PROGRAM_PARAMETERS" value="17.78 -11.6 -2 -140 -17.3" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RunArrayHandler / The array contains the maximum element as the last" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="com.tieto.training.RunArrayHandler" />
+      <module name="lesson01ide" />
+      <option name="PROGRAM_PARAMETERS" value="-17.78 -11.6 -2 -140 17.3" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RunArrayHandler / The array is empty" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="com.tieto.training.RunArrayHandler" />
+      <module name="lesson01ide" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ArrayHandlerTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="lesson01ide" />
+      <option name="PACKAGE_NAME" value="com.tieto.training" />
+      <option name="MAIN_CLASS_NAME" value="com.tieto.training.ArrayHandlerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ArrayHandlerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="lesson01ide" />
+      <option name="PACKAGE_NAME" value="com.tieto.training" />
+      <option name="MAIN_CLASS_NAME" value="com.tieto.training.ArrayHandlerTest" />
+      <option name="TEST_OBJECT" value="uniqueId" />
+      <uniqueIds>
+        <uniqueId value="[engine:junit-jupiter]/[class:com.tieto.training.ArrayHandlerTest]" />
+      </uniqueIds>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ArrayHandlerTest.testGetMaxNBasicScenario" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="lesson01ide" />
+      <option name="PACKAGE_NAME" value="com.tieto.training" />
+      <option name="MAIN_CLASS_NAME" value="com.tieto.training.ArrayHandlerTest" />
+      <option name="METHOD_NAME" value="testGetMaxNBasicScenario" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ArrayHandlerTest.testGetMaxNIncludesSeveralDoublicatesOfSeveralValues" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="lesson01ide" />
+      <option name="PACKAGE_NAME" value="com.tieto.training" />
+      <option name="MAIN_CLASS_NAME" value="com.tieto.training.ArrayHandlerTest" />
+      <option name="METHOD_NAME" value="testGetMaxNIncludesSeveralDoublicatesOfSeveralValues" />
+      <option name="TEST_OBJECT" value="method" />
+      <uniqueIds>
+        <uniqueId value="[engine:junit-jupiter]/[class:com.tieto.training.ArrayHandlerTest]" />
+      </uniqueIds>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ArrayHandlerTest.testGetMaxNNegative" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="lesson01ide" />
+      <option name="PACKAGE_NAME" value="com.tieto.training" />
+      <option name="MAIN_CLASS_NAME" value="com.tieto.training.ArrayHandlerTest" />
+      <option name="METHOD_NAME" value="testGetMaxNNegative" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.RunArrayHandler / The array contain only negative values" />
+      <item itemvalue="Application.RunArrayHandler / The array contains all the elements the same" />
+      <item itemvalue="Application.RunArrayHandler / The array contains only positive values" />
+      <item itemvalue="Application.RunArrayHandler / The array contains the maximum element as the first" />
+      <item itemvalue="Application.RunArrayHandler / The array contains the maximum element as the last" />
+      <item itemvalue="Application.RunArrayHandler / The array is empty" />
+      <item itemvalue="JUnit.ArrayHandlerTest (1)" />
+      <item itemvalue="JUnit.ArrayHandlerTest" />
+      <item itemvalue="JUnit.ArrayHandlerTest.testGetMaxNIncludesSeveralDoublicatesOfSeveralValues" />
+      <item itemvalue="JUnit.ArrayHandlerTest.testGetMaxNBasicScenario" />
+      <item itemvalue="JUnit.ArrayHandlerTest.testGetMaxNNegative" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.ArrayHandlerTest (1)" />
+        <item itemvalue="JUnit.ArrayHandlerTest.testGetMaxNNegative" />
+        <item itemvalue="JUnit.ArrayHandlerTest.testGetMaxNBasicScenario" />
+        <item itemvalue="JUnit.ArrayHandlerTest.testGetMaxNIncludesSeveralDoublicatesOfSeveralValues" />
+        <item itemvalue="JUnit.ArrayHandlerTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c55e964d-04f9-40ce-99ce-a15149ba935f" name="Default Changelist" comment="" />
+      <created>1556551256411</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1556551256411</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="ArrayHandlerTest_(1) - 2019.05.27 at 18h 00m 06s.xml">
+      <configuration name="ArrayHandlerTest (1)" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ArrayHandlerTest_(1) - 2019.05.27 at 18h 01m 01s.xml">
+      <configuration name="ArrayHandlerTest (1)" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ArrayHandlerTest_testGetMaxNNegative - 2019.05.27 at 18h 02m 11s.xml">
+      <configuration name="ArrayHandlerTest.testGetMaxNNegative" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ArrayHandlerTest_(1) - 2019.05.27 at 18h 02m 21s.xml">
+      <configuration name="ArrayHandlerTest (1)" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ArrayHandlerTest_testGetMaxNNegative - 2019.05.27 at 18h 04m 38s.xml">
+      <configuration name="ArrayHandlerTest.testGetMaxNNegative" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ArrayHandlerTest_(1) - 2019.05.27 at 18h 04m 47s.xml">
+      <configuration name="ArrayHandlerTest (1)" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ArrayHandlerTest_testGetMaxNNegative - 2019.05.27 at 18h 06m 12s.xml">
+      <configuration name="ArrayHandlerTest.testGetMaxNNegative" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ArrayHandlerTest_(1) - 2019.05.27 at 18h 08m 39s.xml">
+      <configuration name="ArrayHandlerTest (1)" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ArrayHandlerTest_(1) - 2019.05.27 at 18h 09m 04s.xml">
+      <configuration name="ArrayHandlerTest (1)" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ArrayHandlerTest_(1) - 2019.05.27 at 18h 09m 12s.xml">
+      <configuration name="ArrayHandlerTest (1)" configurationId="JUnit" />
+    </history-entry>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1313" height="784" extended-state="6" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26815644" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Learn" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.25345623" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39784947" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32871652" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Maven" order="4" />
+      <window_info anchor="right" id="Palette&#9;" order="5" />
+    </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17318435" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Learn" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.21351767" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32871652" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Maven" order="4" />
+      <window_info anchor="right" id="Palette&#9;" order="5" />
+    </layout-to-restore>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/tieto/training/ArrayHandler.java</url>
+          <line>165</line>
+          <properties />
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/tieto/training/ArrayHandler.java</url>
+          <line>112</line>
+          <properties />
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/tieto/training/ArrayHandler.java</url>
+          <line>133</line>
+          <properties />
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/tieto/training/ArrayHandler.java</url>
+          <line>45</line>
+          <properties />
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/tieto/training/ArrayHandler.java</url>
+          <line>101</line>
+          <properties />
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/com/tieto/training/GetMaxFromArray.java" />
+    <entry file="file://$PROJECT_DIR$/src/com/tieto/training/Cat.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="38" selection-start-line="4" selection-start-column="38" selection-end-line="4" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/ArrayHandlerTest.java" />
+    <entry file="file://$PROJECT_DIR$/src/com/tieto/training/Hello.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="8" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lesson01ide.iml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/com/tieto/training/ArrayHandlerMaxNTest.java" />
+    <entry file="file://$PROJECT_DIR$/src/com/tieto/training/RunArrayHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="48" selection-start-line="11" selection-start-column="48" selection-end-line="11" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/junit/jupiter/junit-jupiter-api/5.5.0-M1/junit-jupiter-api-5.5.0-M1.jar!/org/junit/jupiter/api/Assertions.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="681" selection-start-line="681" selection-end-line="681" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/junit/platform/junit-platform-commons/1.5.0-M1/junit-platform-commons-1.5.0-M1.jar!/org/junit/platform/commons/util/ReflectionUtils.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="123">
+          <caret line="355" selection-start-line="355" selection-end-line="355" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/com/tieto/training/ArrayHandlerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="28" selection-start-line="28" selection-end-line="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/tieto/training/ArrayHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="214">
+          <caret line="56" column="39" lean-forward="true" selection-start-line="56" selection-start-column="39" selection-end-line="56" selection-end-column="39" />
+          <folding>
+            <element signature="e#7297#7298#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>12</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

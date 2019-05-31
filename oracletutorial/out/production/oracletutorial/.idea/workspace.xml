@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="162" />
+    <option name="y" value="96" />
+    <option name="width" value="973" />
+    <option name="height" value="576" />
+  </component>
+  <component name="RunManager">
+    <configuration name="CreateObjectDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="CreateObjectDemo" />
+      <module name="oracletutorial" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.CreateObjectDemo" />
+      </list>
+    </recent_temporary>
+  </component>
+</project>
