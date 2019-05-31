@@ -3,6 +3,19 @@ package com.tieto.training;
 import java.util.Arrays;
 
 public class ArrayHandler {
+
+    // LESSON#3 BEGIN //
+
+    public String[] getMax(String[] input, int n) {
+        if (n < 0) {
+            throw new IllegalArgumentException("Parameter n must be >= 0");
+        }
+        return new String[0];
+    }
+
+    // LESSON#3 END //
+
+
     //returns maximum value from an array of doubles
     public double getMax(double[] input) {
         //check if any data available

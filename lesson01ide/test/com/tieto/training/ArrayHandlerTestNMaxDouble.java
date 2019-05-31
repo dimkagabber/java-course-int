@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-class ArrayHandlerTest {
+class ArrayHandlerTestNMaxDouble {
 
     private ArrayHandler arrayHandler;
 
@@ -119,59 +119,6 @@ class ArrayHandlerTest {
         double[] input = {1.,2.,3.,4.,5.};
         double[] result = {};
         assertArrayEquals(result, arrayHandler.getMax(input,0));
-    }
-
-    //-----------------------------------
-    // tests for: double getMax(double[])
-    //-----------------------------------
-    @Test
-    @DisplayName("getMax() only positive")
-    void testGetMaxPositive() {
-        //only positive values
-        double[] array = {1,2,3};
-        assertEquals(3, arrayHandler.getMax(array));
-    }
-
-    @Test
-    @DisplayName("getMax() only negative")
-    void testGetMaxNegative() {
-        //only negative values
-        double[] array = {-1,-2,-3};
-        assertEquals(-1,arrayHandler.getMax(array));
-    }
-
-    @Test
-    @DisplayName("getMax() equals")
-    void testGetMaxEquals() {
-        //equal values
-        double[] array = {3,3,3};
-        assertEquals(3, arrayHandler.getMax(array));
-    }
-
-    @Test
-    @DisplayName("getMax() max first")
-    void testGetMaxMaxFirst() {
-        double[] array = {3,0,-1};
-        assertEquals(3,arrayHandler.getMax(array));
-    }
-
-    @Test
-    @DisplayName("getMax() max last")
-    void testGetMaxMaxLast() {
-        //max value last
-        double[] array = {0,-1,3};
-        assertEquals(3, arrayHandler.getMax(array));
-    }
-
-    @Test
-    @DisplayName("getMax() empty array")
-    void testGetMaxEmpty() {
-        //empty array
-        double[] array = {};
-        assertThrows(Error.class,
-                () -> {
-                    arrayHandler.getMax(array);
-                });
     }
 
     @Test

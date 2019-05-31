@@ -5,9 +5,10 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
-class ArrayHandlerTest {
+class ArrayHandlerTestNMaxString {
+
+
 
     private ArrayHandler arrayHandler;
 
@@ -16,18 +17,43 @@ class ArrayHandlerTest {
         arrayHandler = new ArrayHandler();
     }
 
-//-----------------------------------
-    //tests for: double[] getMax(double[], int)
-    //-----------------------------------
-
     @Test
-    @DisplayName("double getMax(double[],int) basic scenario")
+    @DisplayName("getMax(String[], int) basic scenario")
     void testGetMaxNBasicScenario(){
-        //•	Basic scenario / all positive
-        double[] input = {8.,7.,9.,2.,5.,4.};
-        double[] result = {9.,8.,7.};
+        String[] input = {"BA","ABC","CDE","ACE"};
+        String[] result = {"CDE","BA","ACE"};
         assertArrayEquals(result, arrayHandler.getMax(input,3));
     }
+
+    @Test
+    @DisplayName("getMax(String[], int) All or some elements are null")
+    void testGetMaxNHasNullElements(){
+        String[] input = {"BA",null,"CDE",null};
+        String[] result = {"CDE","BA"};
+        assertArrayEquals(result, arrayHandler.getMax(input,3));
+    }
+
+    @Test
+    @DisplayName("getMax(String[], int) Some elements the same")
+    void testGetMaxNIcludesEqualElements(){
+        String[] input = {"BA","CDE","CDE","BA"};
+        String[] result = {"CDE","BA"};
+        assertArrayEquals(result, arrayHandler.getMax(input,3));
+     }
+
+    The biggest element at the beginning
+
+/*
+•	The biggest element at the end
+•	Various duplicate elements
+•	Not enough elements in the input array
+•	Not enough different elements in the input array
+•	Empty array
+•	null array
+•	n is negative
+•	n is 0
+•	etc.
+*/
 
     @Test
     void testGetMaxNNegative(){
@@ -119,48 +145,6 @@ class ArrayHandlerTest {
         double[] input = {1.,2.,3.,4.,5.};
         double[] result = {};
         assertArrayEquals(result, arrayHandler.getMax(input,0));
-    }
-
-    //-----------------------------------
-    // tests for: double getMax(double[])
-    //-----------------------------------
-    @Test
-    @DisplayName("getMax() only positive")
-    void testGetMaxPositive() {
-        //only positive values
-        double[] array = {1,2,3};
-        assertEquals(3, arrayHandler.getMax(array));
-    }
-
-    @Test
-    @DisplayName("getMax() only negative")
-    void testGetMaxNegative() {
-        //only negative values
-        double[] array = {-1,-2,-3};
-        assertEquals(-1,arrayHandler.getMax(array));
-    }
-
-    @Test
-    @DisplayName("getMax() equals")
-    void testGetMaxEquals() {
-        //equal values
-        double[] array = {3,3,3};
-        assertEquals(3, arrayHandler.getMax(array));
-    }
-
-    @Test
-    @DisplayName("getMax() max first")
-    void testGetMaxMaxFirst() {
-        double[] array = {3,0,-1};
-        assertEquals(3,arrayHandler.getMax(array));
-    }
-
-    @Test
-    @DisplayName("getMax() max last")
-    void testGetMaxMaxLast() {
-        //max value last
-        double[] array = {0,-1,3};
-        assertEquals(3, arrayHandler.getMax(array));
     }
 
     @Test
