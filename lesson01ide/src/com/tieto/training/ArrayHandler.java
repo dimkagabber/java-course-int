@@ -4,13 +4,130 @@ import java.util.Arrays;
 
 public class ArrayHandler {
 
+//	int: 0 = equal; -1 = a less then b; 1 = a bigger then b;
+
+    final int FIRST_BIGGER = 1;
+    final int EQUAL = 0;
+    final int SECOND_BIGGER = -1;
+
+    private int numberOfResults = 0;
+
     // LESSON#3 BEGIN //
 
     public String[] getMax(String[] input, int n) {
         if (n < 0) {
             throw new IllegalArgumentException("Parameter n must be >= 0");
         }
-        return new String[0];
+        if (n == 0 || input == null) {
+            return new String[0];
+        }
+
+        String[] result = new String[n];
+
+        initializeResultWithEmpties(result);
+
+        int comparisonResult;
+        result[0] = input[0];
+        numberOfResults = 1;
+        for (int i = 1; i < input.length; i++) {
+
+            if(input[i] == null){
+                continue;
+            }
+
+            comparisonResult = compareStrings(input[i], result[numberOfResults-1]);
+            //ignore if equal
+            if(comparisonResult == EQUAL){
+                continue;
+            }
+            // given element is less than existing - add to result
+            // ignore if there are already enough results
+            if(comparisonResult == SECOND_BIGGER && numberOfResults < n){
+               result[numberOfResults] = input[i];
+                numberOfResults++;
+            }
+            // given element is bigger than existing - find place for him and insert
+            else if(comparisonResult == FIRST_BIGGER){
+                addNewElementToResults(result,input[i]);
+            }
+        }
+
+        if(numberOfResults < n){
+            result = shrinkArray(result,numberOfResults);
+        }
+
+        return result;
+    }
+
+    private String[] shrinkArray(String[] source, int length) {
+        String[] target = new String[length];
+        for (int i = 0; i < length; i++) {
+            target[i] = source[i];
+        }
+        return target;
+    }
+
+    private void initializeResultWithEmpties(String[] result) {
+        for (int i = 0; i < result.length; i++) {
+            result[i]="";
+        }
+    }
+
+    public void addNewElementToResults(String[] result, String element) {
+        int comparisonResult;
+        for (int i = 0; i < result.length; i++) {
+            comparisonResult = compareStrings(element, result[i]);
+            if(comparisonResult == EQUAL){
+                break;
+            }
+            //given element is bigger than existing - a place to insert
+            if(comparisonResult == FIRST_BIGGER){
+                shiftArrayElementsForward(result,i);
+                result[i] = element;
+                numberOfResults++;
+                break;
+            }
+        }
+    }
+
+    public void shiftArrayElementsForward(String[] result, int targetPosition){
+        for (int i = result.length - 1; i > targetPosition; i--) {
+            result[i] = result[i-1];
+        }
+    }
+
+    //compare two elements and return the one which is bigger
+    public int compareStrings(String a, String b){
+
+        if(a == null) {
+            return SECOND_BIGGER;
+        }
+        else if(b == null){
+            return FIRST_BIGGER;
+        }
+
+        if(a.equals(b)){
+            return EQUAL;
+        }
+
+        int comparisonResult;
+        int a_length = a.length();
+        int b_length = b.length();
+
+        int comparisonLength = Integer.min(a_length, b_length);
+        for (int i = 0; i < comparisonLength; i++) {
+            if(a.charAt(i) == b.charAt(i)){
+                continue;
+            }
+            if(a.charAt(i) > b.charAt(i)){
+                return FIRST_BIGGER;
+            }
+            else if(a.charAt(i) < b.charAt(i)){
+                return SECOND_BIGGER;
+            }
+        }
+
+        return Integer.compare(a_length, b_length);
     }
 
     // LESSON#3 END //
@@ -30,19 +147,6 @@ public class ArrayHandler {
         }
         return result;
     }
-
-    //compare two elements and return the one which is bigger
-    public double compareElements(double oldElement, double newElement){
-        double max = oldElement;
-        int comparision;
-        comparision = Double.compare(oldElement, newElement);
-        // next element is bigger then previous -> swipe until a bigger found / already the first element
-        if (comparision < 0) {
-            max = newElement;
-        }
-        return max;
-    }
-
 
     public double[] getMax(double[] input, int n) {
         if (n < 0) {
