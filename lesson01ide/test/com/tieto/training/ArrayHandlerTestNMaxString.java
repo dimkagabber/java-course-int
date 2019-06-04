@@ -8,7 +8,6 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class ArrayHandlerTestNMaxString {
 
-
     private ArrayHandler arrayHandler;
 
     @BeforeEach
@@ -95,6 +94,7 @@ class ArrayHandlerTestNMaxString {
         String[] result = {};
         assertArrayEquals(result, arrayHandler.getMax(input, 5));
     }
+
 
     @Test
     @DisplayName("getMax(String[], int) n is negative")
