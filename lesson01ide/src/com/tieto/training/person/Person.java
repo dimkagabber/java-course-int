@@ -9,12 +9,53 @@ public class Person {
     private final Gender gender;
     private final boolean highSkilled;
 
-    public Person(Builder builder) {
-        this.firstName = builder.firstname;
-        this.lastName = builder.lastname;
-        this.address = builder.address;
-        this.gender = builder.gender;
-        this.highSkilled = builder.highskilled;
+    public static Builder builder() {
+        return new Builder();
+    }
+
+    public Person(Builder builder){
+        this.firstName   = builder.firstName;
+        this.lastName    = builder.lastName;
+        this.gender      = builder.gender;
+        this.highSkilled = builder.highSkilled;
+        this.address     = builder.address;
+    }
+
+    public static class Builder {
+        private String firstName;
+        private String lastName;
+        private Address address;
+        private Gender gender;
+        private boolean highSkilled;
+
+        public Builder firstName(final String firstName) {
+            this.firstName = firstName;
+            return this;
+        }
+
+        public Builder lastName(final String lastName) {
+            this.lastName = lastName;
+            return this;
+        }
+
+        public Builder address(final Address address) {
+            this.address = address;
+            return this;
+        }
+
+        public Builder gender(final Gender gender) {
+            this.gender = gender;
+            return this;
+        }
+
+        public Builder highSkilled(final boolean highSkilled) {
+            this.highSkilled = highSkilled;
+            return this;
+        }
+
+        public Person build(){
+            return new Person(this);
+        }
     }
 
     @Override
@@ -44,67 +85,4 @@ public class Person {
                 ", highSkilled=" + highSkilled +
                 '}';
     }
-
-    public String getFirstName() {
-        return firstName;
-    }
-
-    public String getLastName() {
-        return lastName;
-    }
-
-    public Address getAddress() {
-        return address;
-    }
-
-    public Gender getGender() {
-        return gender;
-    }
-
-    public boolean isHighSkilled() {
-        return highSkilled;
-    }
-
-    public static Builder builder(){
-        return new Builder();
-    }
-
-    public static class Builder {
-        private String firstname;
-        private String lastname;
-        private Address address;
-        private Gender gender;
-        private boolean highskilled;
-
-        public Builder firstname(final String firstname) {
-            this.firstname = firstname;
-            return this;
-        }
-
-        public Builder lastname(final String lastname) {
-            this.lastname = lastname;
-            return this;
-        }
-
-        public Builder address(final Address address) {
-            this.address = address;
-            return this;
-        }
-
-        public Builder gender(final Gender gender) {
-            this.gender = gender;
-            return this;
-        }
-
-        public Builder highskilled(final boolean highskilled) {
-            this.highskilled = highskilled;
-            return this;
-        }
-
-        public Person build() {
-            return new Person(this);
-        }
-
-    }
-
 }

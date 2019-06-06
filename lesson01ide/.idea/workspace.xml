@@ -2,25 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c55e964d-04f9-40ce-99ce-a15149ba935f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/tieto/training/person/Address.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/tieto/training/person/Gender.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/tieto/training/person/Person.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/com/tieto/training/person/PersonTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/com/tieto/training/ArrayHandlerTestNMaxPerson.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lesson01ide.iml" beforeDir="false" afterPath="$PROJECT_DIR$/lesson01ide.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/lesson01ide/com/tieto/training/ArrayHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lesson01ide/com/tieto/training/ArrayHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/lesson01ide/com/tieto/training/Cat.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/lesson01ide/com/tieto/training/Hello.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/lesson01ide/com/tieto/training/RunArrayHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/lesson01ide/com/tieto/training/ArrayHandlerTestMaxDouble.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/lesson01ide/com/tieto/training/ArrayHandlerTestNMaxString.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/lesson01ide/com/tieto/training/ArrayHandlerTestNMaxString.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lesson01ide/com/tieto/training/person/Address$Builder.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lesson01ide/com/tieto/training/person/Address$Builder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lesson01ide/com/tieto/training/person/Address.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lesson01ide/com/tieto/training/person/Address.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lesson01ide/com/tieto/training/person/Person$Builder.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lesson01ide/com/tieto/training/person/Person$Builder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lesson01ide/com/tieto/training/person/Person.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lesson01ide/com/tieto/training/person/Person.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/lesson01ide/com/tieto/training/person/PersonTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/lesson01ide/com/tieto/training/person/PersonTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/tieto/training/ArrayHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tieto/training/ArrayHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/tieto/training/Cat.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/tieto/training/Hello.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/tieto/training/RunArrayHandler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/com/tieto/training/ArrayHandlerTestMaxDouble.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/com/tieto/training/ArrayHandlerTestNMaxString.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/tieto/training/ArrayHandlerTestNMaxString.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/tieto/training/person/Address.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tieto/training/person/Address.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/tieto/training/person/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tieto/training/person/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/tieto/training/person/PersonTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/tieto/training/person/PersonTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -38,11 +30,26 @@
         <entry file="file://$PROJECT_DIR$/src/com/tieto/training/ArrayHandler.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="255">
-              <caret line="17" selection-start-line="17" selection-end-line="17" />
+              <caret line="15" column="4" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#5183#5184#0" expanded="true" />
-                <element signature="e#5226#5227#0" expanded="true" />
+                <element signature="e#5622#5623#0" expanded="true" />
+                <element signature="e#5665#5666#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/test/com/tieto/training/ArrayHandlerTestNMaxPerson.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="439">
+              <caret line="274" column="42" lean-forward="true" selection-start-line="274" selection-start-column="42" selection-end-line="274" selection-end-column="42" />
+              <folding>
+                <element signature="e#289#290#0" expanded="true" />
+                <element signature="e#324#325#0" expanded="true" />
+                <element signature="method#getMaxBasic#0;class#ArrayHandlerTestNMaxPerson#0" />
+                <element signature="method#getMaxEmptyName#0;class#ArrayHandlerTestNMaxPerson#0" />
               </folding>
             </state>
           </provider>
@@ -51,8 +58,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/com/tieto/training/person/PersonTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+            <state relative-caret-position="561">
+              <caret line="33" column="34" selection-start-line="33" selection-start-column="34" selection-end-line="33" selection-end-column="34" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -60,28 +67,16 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/tieto/training/person/Person.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="462">
-              <caret line="33" column="71" selection-start-line="33" selection-start-column="71" selection-end-line="33" selection-end-column="71" />
+            <state relative-caret-position="1224">
+              <caret line="78" column="18" selection-start-line="78" selection-start-column="18" selection-end-line="78" selection-end-column="18" />
               <folding>
-                <element signature="e#1050#1051#0" expanded="true" />
-                <element signature="e#1136#1137#0" expanded="true" />
-                <element signature="e#231#232#0" expanded="true" />
-                <element signature="e#263#264#0" expanded="true" />
-                <element signature="e#298#299#0" expanded="true" />
-                <element signature="e#329#330#0" expanded="true" />
-                <element signature="e#364#365#0" expanded="true" />
-                <element signature="e#394#395#0" expanded="true" />
-                <element signature="e#427#428#0" expanded="true" />
-                <element signature="e#456#457#0" expanded="true" />
-                <element signature="e#494#495#0" expanded="true" />
-                <element signature="e#528#529#0" expanded="true" />
-                <element signature="e#1896#1897#0" expanded="true" />
-                <element signature="e#1931#1932#0" expanded="true" />
-                <element signature="e#2652#2653#0" expanded="true" />
-                <element signature="e#2687#2688#0" expanded="true" />
+                <element signature="e#300#301#0" expanded="true" />
+                <element signature="e#336#337#0" expanded="true" />
+                <element signature="e#2083#2084#0" expanded="true" />
+                <element signature="e#2169#2170#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -90,19 +85,15 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/tieto/training/person/Address.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="598">
-              <caret line="61" column="35" selection-start-line="61" selection-start-column="35" selection-end-line="61" selection-end-column="35" />
+            <state relative-caret-position="425">
+              <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
               <folding>
-                <element signature="e#119#120#0" expanded="true" />
-                <element signature="e#146#147#0" expanded="true" />
-                <element signature="e#178#179#0" expanded="true" />
-                <element signature="e#206#207#0" expanded="true" />
-                <element signature="e#430#431#0" expanded="true" />
-                <element signature="e#466#467#0" expanded="true" />
-                <element signature="e#841#842#0" expanded="true" />
-                <element signature="e#890#891#0" expanded="true" />
-                <element signature="e#1456#1457#0" expanded="true" />
-                <element signature="e#1490#1491#0" expanded="true" />
+                <element signature="e#299#300#0" expanded="true" />
+                <element signature="e#335#336#0" expanded="true" />
+                <element signature="e#702#703#0" expanded="true" />
+                <element signature="e#750#751#0" expanded="true" />
+                <element signature="e#1121#1122#0" expanded="true" />
+                <element signature="e#1170#1171#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -113,8 +104,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Enum" />
+        <option value="Class" />
         <option value="JUnit5 Test Class" />
       </list>
     </option>
@@ -151,20 +142,22 @@
         <option value="$PROJECT_DIR$/test/com/tieto/training/ArrayHandlerTestMaxDouble.java" />
         <option value="$PROJECT_DIR$/test/com/tieto/training/ArrayHandlerTestNMaxDouble.java" />
         <option value="$PROJECT_DIR$/src/com/tieto/training/ArrayHandlerCommon.java" />
-        <option value="$PROJECT_DIR$/src/com/tieto/training/ArrayHandler.java" />
         <option value="$PROJECT_DIR$/test/com/tieto/training/ArrayHandlerTestNMaxString.java" />
         <option value="$PROJECT_DIR$/src/com/tieto/training/person/Gender.java" />
-        <option value="$PROJECT_DIR$/src/com/tieto/training/person/Address.java" />
         <option value="$PROJECT_DIR$/test/com/tieto/training/person/PersonTest.java" />
         <option value="$PROJECT_DIR$/src/com/tieto/training/person/Person.java" />
+        <option value="$PROJECT_DIR$/src/com/tieto/training/person/Address.java" />
+        <option value="$PROJECT_DIR$/test/com/tieto/training/ArrayHandlerTestNPerson.java" />
+        <option value="$PROJECT_DIR$/src/com/tieto/training/ArrayHandler.java" />
+        <option value="$PROJECT_DIR$/test/com/tieto/training/ArrayHandlerTestNMaxPerson.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-1407" />
-    <option name="y" value="-393" />
-    <option name="width" value="1311" />
-    <option name="height" value="768" />
+    <option name="x" value="-1184" />
+    <option name="y" value="-1370" />
+    <option name="width" value="1936" />
+    <option name="height" value="1216" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -173,6 +166,7 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -220,7 +214,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -240,22 +233,22 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
-      <recent name="com.tieto.training.person" />
       <recent name="com.tieto.training" />
-    </key>
-    <key name="CreateClassDialog.RecentsKey">
       <recent name="com.tieto.training.person" />
-    </key>
-    <key name="CreateTestDialog.Recents.Supers">
-      <recent name="" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.tieto.training" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Coding\JavaTieto\lesson01ide" />
       <recent name="C:\Coding\JavaTieto\lesson01ide\src" />
       <recent name="C:\Coding\JavaTieto\lesson01ide\test" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.tieto.training" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.tieto.training.person" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -270,7 +263,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.PersonTest">
+  <component name="RunManager" selected="JUnit.ArrayHandlerTestNMaxPerson">
     <configuration name="RunArrayHandler / The array contain only negative values" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="com.tieto.training.RunArrayHandler" />
       <module name="lesson01ide" />
@@ -337,16 +330,10 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ArrayHandlerTestNMaxString" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ArrayHandlerTestNMaxPerson" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="lesson01ide" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.tieto.training.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <option name="PACKAGE_NAME" value="com.tieto.training" />
-      <option name="MAIN_CLASS_NAME" value="com.tieto.training.ArrayHandlerTestNMaxString" />
+      <option name="MAIN_CLASS_NAME" value="com.tieto.training.ArrayHandlerTestNMaxPerson" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -376,19 +363,19 @@
       <item itemvalue="Application.RunArrayHandler / The array contains the maximum element as the first" />
       <item itemvalue="Application.RunArrayHandler / The array contains the maximum element as the last" />
       <item itemvalue="Application.RunArrayHandler / The array is empty" />
-      <item itemvalue="JUnit.ArrayHandlerTestNMaxString" />
       <item itemvalue="JUnit.com.tieto.training in lesson01ide" />
       <item itemvalue="JUnit.ArrayHandlerTestNMaxDouble.testGetMaxNBiggestAtTheEnd" />
       <item itemvalue="JUnit.ArrayHandlerTestNMaxDouble" />
       <item itemvalue="JUnit.PersonTest" />
+      <item itemvalue="JUnit.ArrayHandlerTestNMaxPerson" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ArrayHandlerTestNMaxPerson" />
         <item itemvalue="JUnit.PersonTest" />
         <item itemvalue="JUnit.com.tieto.training in lesson01ide" />
         <item itemvalue="JUnit.ArrayHandlerTestNMaxDouble" />
         <item itemvalue="JUnit.ArrayHandlerTestNMaxDouble.testGetMaxNBiggestAtTheEnd" />
-        <item itemvalue="JUnit.ArrayHandlerTestNMaxString" />
       </list>
     </recent_temporary>
   </component>
@@ -406,21 +393,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="PersonTest - 2019.06.03 at 17h 44m 35s.xml">
-      <configuration name="PersonTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="PersonTest - 2019.06.03 at 17h 45m 30s.xml">
-      <configuration name="PersonTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="PersonTest - 2019.06.03 at 17h 47m 05s.xml">
-      <configuration name="PersonTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="PersonTest - 2019.06.03 at 17h 47m 33s.xml">
-      <configuration name="PersonTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="PersonTest - 2019.06.03 at 17h 49m 21s.xml">
-      <configuration name="PersonTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="PersonTest - 2019.06.03 at 17h 53m 00s.xml">
       <configuration name="PersonTest" configurationId="JUnit" />
     </history-entry>
@@ -436,11 +408,27 @@
     <history-entry file="PersonTest - 2019.06.04 at 08h 24m 26s.xml">
       <configuration name="PersonTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="PersonTest - 2019.06.06 at 14h 14m 24s.xml">
+      <configuration name="PersonTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PersonTest - 2019.06.06 at 14h 16m 46s.xml">
+      <configuration name="PersonTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PersonTest - 2019.06.06 at 14h 17m 19s.xml">
+      <configuration name="PersonTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ArrayHandlerTestNMaxPerson - 2019.06.06 at 17h 45m 44s.xml">
+      <configuration name="ArrayHandlerTestNMaxPerson" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ArrayHandlerTestNMaxPerson - 2019.06.06 at 17h 46m 14s.xml">
+      <configuration name="ArrayHandlerTestNMaxPerson" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1928" y="-714" width="1936" height="1216" extended-state="6" />
+    <frame x="-1184" y="-1370" width="1936" height="1216" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20042644" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20469083" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Learn" order="3" />
@@ -450,7 +438,7 @@
       <window_info id="Capture Tool" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32963988" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.21237303" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.22345337" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3961219" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -535,41 +523,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/tieto/training/ArrayHandlerCommon.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/tieto/training/ArrayHandlerCommon.java" />
     <entry file="file://$PROJECT_DIR$/test/com/tieto/training/ArrayHandlerTestNMaxDouble.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="22" column="9" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/com/tieto/training/ArrayHandlerTestNMaxString.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/tieto/training/ArrayHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#5183#5184#0" expanded="true" />
-            <element signature="e#5226#5227#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -599,56 +559,75 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/com/tieto/training/person/PersonTest.java">
+    <entry file="file://$PROJECT_DIR$/src/com/tieto/training/person/Person.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+        <state relative-caret-position="1224">
+          <caret line="78" column="18" selection-start-line="78" selection-start-column="18" selection-end-line="78" selection-end-column="18" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#300#301#0" expanded="true" />
+            <element signature="e#336#337#0" expanded="true" />
+            <element signature="e#2083#2084#0" expanded="true" />
+            <element signature="e#2169#2170#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/tieto/training/person/Address.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="598">
-          <caret line="61" column="35" selection-start-line="61" selection-start-column="35" selection-end-line="61" selection-end-column="35" />
+        <state relative-caret-position="425">
+          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
           <folding>
-            <element signature="e#119#120#0" expanded="true" />
-            <element signature="e#146#147#0" expanded="true" />
-            <element signature="e#178#179#0" expanded="true" />
-            <element signature="e#206#207#0" expanded="true" />
-            <element signature="e#430#431#0" expanded="true" />
-            <element signature="e#466#467#0" expanded="true" />
-            <element signature="e#841#842#0" expanded="true" />
-            <element signature="e#890#891#0" expanded="true" />
-            <element signature="e#1456#1457#0" expanded="true" />
-            <element signature="e#1490#1491#0" expanded="true" />
+            <element signature="e#299#300#0" expanded="true" />
+            <element signature="e#335#336#0" expanded="true" />
+            <element signature="e#702#703#0" expanded="true" />
+            <element signature="e#750#751#0" expanded="true" />
+            <element signature="e#1121#1122#0" expanded="true" />
+            <element signature="e#1170#1171#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/tieto/training/person/Person.java">
+    <entry file="file://$PROJECT_DIR$/test/com/tieto/training/person/PersonTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="33" column="71" selection-start-line="33" selection-start-column="71" selection-end-line="33" selection-end-column="71" />
+        <state relative-caret-position="561">
+          <caret line="33" column="34" selection-start-line="33" selection-start-column="34" selection-end-line="33" selection-end-column="34" />
           <folding>
-            <element signature="e#1050#1051#0" expanded="true" />
-            <element signature="e#1136#1137#0" expanded="true" />
-            <element signature="e#231#232#0" expanded="true" />
-            <element signature="e#263#264#0" expanded="true" />
-            <element signature="e#298#299#0" expanded="true" />
-            <element signature="e#329#330#0" expanded="true" />
-            <element signature="e#364#365#0" expanded="true" />
-            <element signature="e#394#395#0" expanded="true" />
-            <element signature="e#427#428#0" expanded="true" />
-            <element signature="e#456#457#0" expanded="true" />
-            <element signature="e#494#495#0" expanded="true" />
-            <element signature="e#528#529#0" expanded="true" />
-            <element signature="e#1896#1897#0" expanded="true" />
-            <element signature="e#1931#1932#0" expanded="true" />
-            <element signature="e#2652#2653#0" expanded="true" />
-            <element signature="e#2687#2688#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/tieto/training/ArrayHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="4" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#5622#5623#0" expanded="true" />
+            <element signature="e#5665#5666#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/com/tieto/training/ArrayHandlerTestNMaxString.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="37" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/com/tieto/training/ArrayHandlerTestNMaxPerson.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="439">
+          <caret line="274" column="42" lean-forward="true" selection-start-line="274" selection-start-column="42" selection-end-line="274" selection-end-column="42" />
+          <folding>
+            <element signature="e#289#290#0" expanded="true" />
+            <element signature="e#324#325#0" expanded="true" />
+            <element signature="method#getMaxBasic#0;class#ArrayHandlerTestNMaxPerson#0" />
+            <element signature="method#getMaxEmptyName#0;class#ArrayHandlerTestNMaxPerson#0" />
           </folding>
         </state>
       </provider>

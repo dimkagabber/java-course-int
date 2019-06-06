@@ -1,5 +1,6 @@
 package com.tieto.training;
 
+import com.tieto.training.person.Person;
 import org.jetbrains.annotations.NotNull;
 
 import java.util.Arrays;
@@ -8,12 +9,58 @@ public class ArrayHandler {
 
 // Q: How to select method with specific signature when using generic type?
 
-    // STRING HANDLER START //
-
     final static int FIRST_BIGGER = 1;
     final static int EQUAL = 0;
     final static int SECOND_BIGGER = -1;
 
+    // PERSON HANDLER START //
+    public Person[] getMax(Person[] input, int n) {
+
+        if (n < 0) {
+            throw new IllegalArgumentException("Parameter n must be >= 0");
+        }
+        if (n == 0 || input == null || input.length == 0) {
+            return new Person[0];
+        }
+
+        return new Person[0];
+    }
+
+
+    // PERSON HANDLER FINISH //
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    // STRING HANDLER START //
     @NotNull
     public String[] getMax(String[] input, int n) {
 

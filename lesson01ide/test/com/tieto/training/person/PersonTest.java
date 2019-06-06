@@ -11,27 +11,27 @@ class PersonTest {
     @DisplayName("Comparison test")
     void basic(){
         final Person p1 = Person.builder()
-                .firstname("Stefan")
-                .lastname("Muller")
+                .firstName("Stefan")
+                .lastName("Muller")
                 .address(Address.builder()
                     .city("Regensburg")
                     .street("Im Gevebepark")
                     .build()
                 )
                 .gender(Gender.MAN)
-                .highskilled(true)
+                .highSkilled(true)
                 .build();
 
         final Person p2 = Person.builder()
-                .firstname("Stefan")
-                .lastname("Muller")
+                .firstName("Stefan")
+                .lastName("Muller")
                 .address(Address.builder()
                         .city("Regensburg")
                         .street("Im Gevebepark")
                         .build()
                 )
                 .gender(Gender.MAN)
-                .highskilled(true)
+                .highSkilled(true)
                 .build();
 
         assertEquals(p1,p2); // have the same content
