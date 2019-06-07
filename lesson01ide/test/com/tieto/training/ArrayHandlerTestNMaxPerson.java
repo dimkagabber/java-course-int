@@ -23,19 +23,871 @@ class ArrayHandlerTestNMaxPerson {
     @DisplayName("Basic scenario")
     void getMaxBasic() {
         Person[] input = new Person[5];
+        input[1] = Person.builder()
+                .firstName("Michael")
+                .lastName("Scott")
+                .gender(Gender.MAN)
+                .highSkilled(true)
+                .address(
+                        Address.builder()
+                                .city("Scranton")
+                                .street("Duncan st")
+                                .build())
+                .build();
+
         input[0] = Person.builder()
-            .firstName("Michael")
-            .lastName("Scott")
-            .gender(Gender.MAN)
-            .highSkilled(true)
-            .address(
-                    Address.builder()
-                    .city("Scranton")
-                    .street("Duncan st")
-                    .build())
-            .build();
+                .firstName("Dwight")
+                .lastName("Schrute")
+                .gender(Gender.MAN)
+                .highSkilled(true)
+                .address(
+                        Address.builder()
+                                .city("Bear Creek")
+                                .street("Schrute's farm")
+                                .build())
+                .build();
+
+        input[2] = Person.builder()
+                .firstName("Jim")
+                .lastName("Halpert")
+                .gender(Gender.MAN)
+                .highSkilled(true)
+                .address(
+                        Address.builder()
+                                .city("Scranton")
+                                .street("Orchard st")
+                                .build())
+                .build();
+
+        input[3] = Person.builder()
+                .firstName("Pam")
+                .lastName("Beesly")
+                .gender(Gender.WOMAN)
+                .highSkilled(true)
+                .address(
+                        Address.builder()
+                                .city("Scranton")
+                                .street("River st")
+                                .build())
+                .build();
+
+        input[4] = Person.builder()
+                .firstName("Ryan")
+                .lastName("Howard")
+                .gender(Gender.MAN)
+                .highSkilled(true)
+                .address(
+                        Address.builder()
+                                .city("New York")
+                                .street("1st ave")
+                                .build())
+                .build();
+
+        Person[] result = new Person[4];
+
+        result[0] = Person.builder()
+                .firstName("Michael")
+                .lastName("Scott")
+                .gender(Gender.MAN)
+                .highSkilled(true)
+                .address(
+                        Address.builder()
+                                .city("Scranton")
+                                .street("Duncan st")
+                                .build())
+                .build();
+
+        result[1] = Person.builder()
+                .firstName("Dwight")
+                .lastName("Schrute")
+                .gender(Gender.MAN)
+                .highSkilled(true)
+                .address(
+                        Address.builder()
+                                .city("Bear Creek")
+                                .street("Schrute's farm")
+                                .build())
+                .build();
+
+        result[3] = Person.builder()
+                .firstName("Jim")
+                .lastName("Halpert")
+                .gender(Gender.MAN)
+                .highSkilled(true)
+                .address(
+                        Address.builder()
+                                .city("Scranton")
+                                .street("Orchard st")
+                                .build())
+                .build();
+
+        result[2] = Person.builder()
+                .firstName("Ryan")
+                .lastName("Howard")
+                .gender(Gender.MAN)
+                .highSkilled(true)
+                .address(
+                        Address.builder()
+                                .city("New York")
+                                .street("1st ave")
+                                .build())
+                .build();
+
+        assertEquals(result, arrayHandler.getMax(input, 4));
+
+    }
+
+    @Test
+    @DisplayName("Some persons have empty first name and/or last name")
+    void getMaxEmptyName() {
+        Person[] input = new Person[5];
+        input[0] = Person.builder()
+                .firstName("Michael")
+                .lastName("")
+                .gender(Gender.MAN)
+                .highSkilled(true)
+                .address(
+                        Address.builder()
+                                .city("Scranton")
+                                .street("Duncan st")
+                                .build())
+                .build();
 
         input[1] = Person.builder()
+                .firstName("Dwight")
+                .lastName("Schrute")
+                .gender(Gender.MAN)
+                .highSkilled(true)
+                .address(
+                        Address.builder()
+                                .city("Bear Creek")
+                                .street("Schrute's farm")
+                                .build())
+                .build();
+
+        input[2] = Person.builder()
+                .firstName("Jim")
+                .lastName("")
+                .gender(Gender.MAN)
+                .highSkilled(true)
+                .address(
+                        Address.builder()
+                                .city("Scranton")
+                                .street("Orchard st")
+                                .build())
+                .build();
+
+        input[3] = Person.builder()
+                .firstName("")
+                .lastName("Beesly")
+                .gender(Gender.WOMAN)
+                .highSkilled(true)
+                .address(
+                        Address.builder()
+                                .city("Scranton")
+                                .street("River st")
+                                .build())
+                .build();
+
+        input[4] = Person.builder()
+                .firstName("Ryan")
+                .lastName("Howard")
+                .gender(Gender.MAN)
+                .highSkilled(true)
+                .address(
+                        Address.builder()
+                                .city("New York")
+                                .street("1st ave")
+                                .build())
+                .build();
+
+        Person[] result = new Person[4];
+
+        result[0] = Person.builder()
+                .firstName("Michael")
+                .lastName("")
+                .gender(Gender.MAN)
+                .highSkilled(true)
+                .address(
+                        Address.builder()
+                                .city("Scranton")
+                                .street("Duncan st")
+                                .build())
+                .build();
+
+        result[2] = Person.builder()
+                .firstName("Dwight")
+                .lastName("Schrute")
+                .gender(Gender.MAN)
+                .highSkilled(true)
+                .address(
+                        Address.builder()
+                                .city("Bear Creek")
+                                .street("Schrute's farm")
+                                .build())
+                .build();
+
+        result[1] = Person.builder()
+                .firstName("Jim")
+                .lastName("Halpert")
+                .gender(Gender.MAN)
+                .highSkilled(true)
+                .address(
+                        Address.builder()
+                                .city("Scranton")
+                                .street("Orchard st")
+                                .build())
+                .build();
+
+        result[3] = Person.builder()
+                .firstName("Ryan")
+                .lastName("Howard")
+                .gender(Gender.MAN)
+                .highSkilled(true)
+                .address(
+                        Address.builder()
+                                .city("New York")
+                                .street("1st ave")
+                                .build())
+                .build();
+
+        assertEquals(result, arrayHandler.getMax(input, 4));
+
+    }
+
+    @Test
+    @DisplayName("All or some elements are null")
+    void getMaxNullElements() {
+        Person[] input = new Person[5];
+
+        input[1] = Person.builder()
+                .firstName("Dwight")
+                .lastName("Schrute")
+                .gender(Gender.MAN)
+                .highSkilled(true)
+                .address(
+                        Address.builder()
+                                .city("Bear Creek")
+                                .street("Schrute's farm")
+                                .build())
+                .build();
+
+        input[2] = Person.builder()
+                .firstName("Jim")
+                .lastName("Halpert")
+                .gender(Gender.MAN)
+                .highSkilled(true)
+                .address(
+                        Address.builder()
+                                .city("Scranton")
+                                .street("Orchard st")
+                                .build())
+                .build();
+
+        input[3] = Person.builder()
+                .firstName("Pam")
+                .lastName("Beesly")
+                .gender(Gender.WOMAN)
+                .highSkilled(true)
+                .address(
+                        Address.builder()
+                                .city("Scranton")
+                                .street("River st")
+                                .build())
+                .build();
+
+        Person[] result = new Person[4];
+
+        result[0] = Person.builder()
+                .firstName("Dwight")
+                .lastName("Schrute")
+                .gender(Gender.MAN)
+                .highSkilled(true)
+                .address(
+                        Address.builder()
+                                .city("Bear Creek")
+                                .street("Schrute's farm")
+                                .build())
+                .build();
+
+        result[3] = Person.builder()
+                .firstName("Jim")
+                .lastName("Halpert")
+                .gender(Gender.MAN)
+                .highSkilled(true)
+                .address(
+                        Address.builder()
+                                .city("Scranton")
+                                .street("Orchard st")
+                                .build())
+                .build();
+
+        assertEquals(result, arrayHandler.getMax(input, 2));
+
+    }
+
+    @Test
+    @DisplayName("Some elements the same")
+    void getMaxOneDuplicateElement() {
+        Person[] input = new Person[7];
+        input[0] = Person.builder()
+                .firstName("Dwight")
+                .lastName("Schrute")
+                .gender(Gender.MAN)
+                .highSkilled(true)
+                .address(
+                        Address.builder()
+                                .city("Bear Creek")
+                                .street("Schrute's farm")
+                                .build())
+                .build();
+
+        input[1] = Person.builder()
+                .firstName("Michael")
+                .lastName("Scott")
+                .gender(Gender.MAN)
+                .highSkilled(true)
+                .address(
+                        Address.builder()
+                                .city("Scranton")
+                                .street("Duncan st")
+                                .build())
+                .build();
+
+        input[2] = Person.builder()
+                .firstName("Michael")
+                .lastName("Scott")
+                .gender(Gender.MAN)
+                .highSkilled(true)
+                .address(
+                        Address.builder()
+                                .city("Scranton")
+                                .street("Duncan st")
+                                .build())
+                .build();
+
+        input[3] = Person.builder()
+                .firstName("Jim")
+                .lastName("Halpert")
+                .gender(Gender.MAN)
+                .highSkilled(true)
+                .address(
+                        Address.builder()
+                                .city("Scranton")
+                                .street("Orchard st")
+                                .build())
+                .build();
+
+        input[4] = Person.builder()
+                .firstName("Michael")
+                .lastName("Scott")
+                .gender(Gender.MAN)
+                .highSkilled(true)
+                .address(
+                        Address.builder()
+                                .city("Scranton")
+                                .street("Duncan st")
+                                .build())
+                .build();
+
+        input[5] = Person.builder()
+                .firstName("Pam")
+                .lastName("Beesly")
+                .gender(Gender.WOMAN)
+                .highSkilled(true)
+                .address(
+                        Address.builder()
+                                .city("Scranton")
+                                .street("River st")
+                                .build())
+                .build();
+
+        input[6] = Person.builder()
+                .firstName("Ryan")
+                .lastName("Howard")
+                .gender(Gender.MAN)
+                .highSkilled(true)
+                .address(
+                        Address.builder()
+                                .city("New York")
+                                .street("1st ave")
+                                .build())
+                .build();
+
+        Person[] result = new Person[4];
+
+        result[0] = Person.builder()
+                .firstName("Michael")
+                .lastName("Scott")
+                .gender(Gender.MAN)
+                .highSkilled(true)
+                .address(
+                        Address.builder()
+                                .city("Scranton")
+                                .street("Duncan st")
+                                .build())
+                .build();
+
+        result[1] = Person.builder()
+                .firstName("Dwight")
+                .lastName("Schrute")
+                .gender(Gender.MAN)
+                .highSkilled(true)
+                .address(
+                        Address.builder()
+                                .city("Bear Creek")
+                                .street("Schrute's farm")
+                                .build())
+                .build();
+
+        result[3] = Person.builder()
+                .firstName("Jim")
+                .lastName("Halpert")
+                .gender(Gender.MAN)
+                .highSkilled(true)
+                .address(
+                        Address.builder()
+                                .city("Scranton")
+                                .street("Orchard st")
+                                .build())
+                .build();
+
+        result[2] = Person.builder()
+                .firstName("Ryan")
+                .lastName("Howard")
+                .gender(Gender.MAN)
+                .highSkilled(true)
+                .address(
+                        Address.builder()
+                                .city("New York")
+                                .street("1st ave")
+                                .build())
+                .build();
+
+        assertEquals(result, arrayHandler.getMax(input, 4));
+
+    }
+
+    @Test
+    @DisplayName("The biggest element at the beginning")
+    void getMaxBiggestFirst() {
+        Person[] input = new Person[5];
+        input[0] = Person.builder()
+                .firstName("Michael")
+                .lastName("Scott")
+                .gender(Gender.MAN)
+                .highSkilled(true)
+                .address(
+                        Address.builder()
+                                .city("Scranton")
+                                .street("Duncan st")
+                                .build())
+                .build();
+
+        input[1] = Person.builder()
+                .firstName("Dwight")
+                .lastName("Schrute")
+                .gender(Gender.MAN)
+                .highSkilled(true)
+                .address(
+                        Address.builder()
+                                .city("Bear Creek")
+                                .street("Schrute's farm")
+                                .build())
+                .build();
+
+        input[2] = Person.builder()
+                .firstName("Jim")
+                .lastName("Halpert")
+                .gender(Gender.MAN)
+                .highSkilled(true)
+                .address(
+                        Address.builder()
+                                .city("Scranton")
+                                .street("Orchard st")
+                                .build())
+                .build();
+
+        input[3] = Person.builder()
+                .firstName("Pam")
+                .lastName("Beesly")
+                .gender(Gender.WOMAN)
+                .highSkilled(true)
+                .address(
+                        Address.builder()
+                                .city("Scranton")
+                                .street("River st")
+                                .build())
+                .build();
+
+        input[4] = Person.builder()
+                .firstName("Ryan")
+                .lastName("Howard")
+                .gender(Gender.MAN)
+                .highSkilled(true)
+                .address(
+                        Address.builder()
+                                .city("New York")
+                                .street("1st ave")
+                                .build())
+                .build();
+
+        Person[] result = new Person[4];
+
+        result[0] = Person.builder()
+                .firstName("Michael")
+                .lastName("Scott")
+                .gender(Gender.MAN)
+                .highSkilled(true)
+                .address(
+                        Address.builder()
+                                .city("Scranton")
+                                .street("Duncan st")
+                                .build())
+                .build();
+
+        result[1] = Person.builder()
+                .firstName("Dwight")
+                .lastName("Schrute")
+                .gender(Gender.MAN)
+                .highSkilled(true)
+                .address(
+                        Address.builder()
+                                .city("Bear Creek")
+                                .street("Schrute's farm")
+                                .build())
+                .build();
+
+        result[3] = Person.builder()
+                .firstName("Jim")
+                .lastName("Halpert")
+                .gender(Gender.MAN)
+                .highSkilled(true)
+                .address(
+                        Address.builder()
+                                .city("Scranton")
+                                .street("Orchard st")
+                                .build())
+                .build();
+
+        result[2] = Person.builder()
+                .firstName("Ryan")
+                .lastName("Howard")
+                .gender(Gender.MAN)
+                .highSkilled(true)
+                .address(
+                        Address.builder()
+                                .city("New York")
+                                .street("1st ave")
+                                .build())
+                .build();
+
+        assertEquals(result, arrayHandler.getMax(input, 4));
+
+    }
+
+    //
+    @Test
+    @DisplayName("The biggest element at the end")
+    void getMaxBiggestLast() {
+        Person[] input = new Person[5];
+        input[4] = Person.builder()
+                .firstName("Michael")
+                .lastName("Scott")
+                .gender(Gender.MAN)
+                .highSkilled(true)
+                .address(
+                        Address.builder()
+                                .city("Scranton")
+                                .street("Duncan st")
+                                .build())
+                .build();
+
+        input[1] = Person.builder()
+                .firstName("Dwight")
+                .lastName("Schrute")
+                .gender(Gender.MAN)
+                .highSkilled(true)
+                .address(
+                        Address.builder()
+                                .city("Bear Creek")
+                                .street("Schrute's farm")
+                                .build())
+                .build();
+
+        input[2] = Person.builder()
+                .firstName("Jim")
+                .lastName("Halpert")
+                .gender(Gender.MAN)
+                .highSkilled(true)
+                .address(
+                        Address.builder()
+                                .city("Scranton")
+                                .street("Orchard st")
+                                .build())
+                .build();
+
+        input[3] = Person.builder()
+                .firstName("Pam")
+                .lastName("Beesly")
+                .gender(Gender.WOMAN)
+                .highSkilled(true)
+                .address(
+                        Address.builder()
+                                .city("Scranton")
+                                .street("River st")
+                                .build())
+                .build();
+
+        input[0] = Person.builder()
+                .firstName("Ryan")
+                .lastName("Howard")
+                .gender(Gender.MAN)
+                .highSkilled(true)
+                .address(
+                        Address.builder()
+                                .city("New York")
+                                .street("1st ave")
+                                .build())
+                .build();
+
+        Person[] result = new Person[4];
+
+        result[0] = Person.builder()
+                .firstName("Michael")
+                .lastName("Scott")
+                .gender(Gender.MAN)
+                .highSkilled(true)
+                .address(
+                        Address.builder()
+                                .city("Scranton")
+                                .street("Duncan st")
+                                .build())
+                .build();
+
+        result[1] = Person.builder()
+                .firstName("Dwight")
+                .lastName("Schrute")
+                .gender(Gender.MAN)
+                .highSkilled(true)
+                .address(
+                        Address.builder()
+                                .city("Bear Creek")
+                                .street("Schrute's farm")
+                                .build())
+                .build();
+
+        result[3] = Person.builder()
+                .firstName("Jim")
+                .lastName("Halpert")
+                .gender(Gender.MAN)
+                .highSkilled(true)
+                .address(
+                        Address.builder()
+                                .city("Scranton")
+                                .street("Orchard st")
+                                .build())
+                .build();
+
+        result[2] = Person.builder()
+                .firstName("Ryan")
+                .lastName("Howard")
+                .gender(Gender.MAN)
+                .highSkilled(true)
+                .address(
+                        Address.builder()
+                                .city("New York")
+                                .street("1st ave")
+                                .build())
+                .build();
+
+        assertEquals(result, arrayHandler.getMax(input, 4));
+
+    }
+
+    @Test
+    @DisplayName("Various duplicate elements")
+    void getMaxSeveralDuplicateElements() {
+        Person[] input = new Person[9];
+        input[0] = Person.builder()
+                .firstName("Dwight")
+                .lastName("Schrute")
+                .gender(Gender.MAN)
+                .highSkilled(true)
+                .address(
+                        Address.builder()
+                                .city("Bear Creek")
+                                .street("Schrute's farm")
+                                .build())
+                .build();
+
+        input[1] = Person.builder()
+                .firstName("Michael")
+                .lastName("Scott")
+                .gender(Gender.MAN)
+                .highSkilled(true)
+                .address(
+                        Address.builder()
+                                .city("Scranton")
+                                .street("Duncan st")
+                                .build())
+                .build();
+
+        input[2] = Person.builder()
+                .firstName("Michael")
+                .lastName("Scott")
+                .gender(Gender.MAN)
+                .highSkilled(true)
+                .address(
+                        Address.builder()
+                                .city("Scranton")
+                                .street("Duncan st")
+                                .build())
+                .build();
+
+        input[3] = Person.builder()
+                .firstName("Dwight")
+                .lastName("Schrute")
+                .gender(Gender.MAN)
+                .highSkilled(true)
+                .address(
+                        Address.builder()
+                                .city("Bear Creek")
+                                .street("Schrute's farm")
+                                .build())
+                .build();
+
+        input[4] = Person.builder()
+                .firstName("Jim")
+                .lastName("Halpert")
+                .gender(Gender.MAN)
+                .highSkilled(true)
+                .address(
+                        Address.builder()
+                                .city("Scranton")
+                                .street("Orchard st")
+                                .build())
+                .build();
+
+        input[5] = Person.builder()
+                .firstName("Michael")
+                .lastName("Scott")
+                .gender(Gender.MAN)
+                .highSkilled(true)
+                .address(
+                        Address.builder()
+                                .city("Scranton")
+                                .street("Duncan st")
+                                .build())
+                .build();
+
+        input[6] = Person.builder()
+                .firstName("Pam")
+                .lastName("Beesly")
+                .gender(Gender.WOMAN)
+                .highSkilled(true)
+                .address(
+                        Address.builder()
+                                .city("Scranton")
+                                .street("River st")
+                                .build())
+                .build();
+
+        input[7] = Person.builder()
+                .firstName("Ryan")
+                .lastName("Howard")
+                .gender(Gender.MAN)
+                .highSkilled(true)
+                .address(
+                        Address.builder()
+                                .city("New York")
+                                .street("1st ave")
+                                .build())
+                .build();
+
+        input[8] = Person.builder()
+                .firstName("Pam")
+                .lastName("Beesly")
+                .gender(Gender.WOMAN)
+                .highSkilled(true)
+                .address(
+                        Address.builder()
+                                .city("Scranton")
+                                .street("River st")
+                                .build())
+                .build();
+
+        Person[] result = new Person[4];
+
+        result[0] = Person.builder()
+                .firstName("Michael")
+                .lastName("Scott")
+                .gender(Gender.MAN)
+                .highSkilled(true)
+                .address(
+                        Address.builder()
+                                .city("Scranton")
+                                .street("Duncan st")
+                                .build())
+                .build();
+
+        result[1] = Person.builder()
+                .firstName("Dwight")
+                .lastName("Schrute")
+                .gender(Gender.MAN)
+                .highSkilled(true)
+                .address(
+                        Address.builder()
+                                .city("Bear Creek")
+                                .street("Schrute's farm")
+                                .build())
+                .build();
+
+        result[3] = Person.builder()
+                .firstName("Jim")
+                .lastName("Halpert")
+                .gender(Gender.MAN)
+                .highSkilled(true)
+                .address(
+                        Address.builder()
+                                .city("Scranton")
+                                .street("Orchard st")
+                                .build())
+                .build();
+
+        result[2] = Person.builder()
+                .firstName("Ryan")
+                .lastName("Howard")
+                .gender(Gender.MAN)
+                .highSkilled(true)
+                .address(
+                        Address.builder()
+                                .city("New York")
+                                .street("1st ave")
+                                .build())
+                .build();
+
+        assertEquals(result, arrayHandler.getMax(input, 4));
+
+    }
+
+    @Test
+    @DisplayName("Not enough elements in the input array")
+    void getMaxNotEnoughElementsInInput() {
+        Person[] input = new Person[5];
+        input[1] = Person.builder()
+                .firstName("Michael")
+                .lastName("Scott")
+                .gender(Gender.MAN)
+                .highSkilled(true)
+                .address(
+                        Address.builder()
+                                .city("Scranton")
+                                .street("Duncan st")
+                                .build())
+                .build();
+
+        input[0] = Person.builder()
                 .firstName("Dwight")
                 .lastName("Schrute")
                 .gender(Gender.MAN)
@@ -86,18 +938,30 @@ class ArrayHandlerTestNMaxPerson {
         Person[] result = new Person[5];
 
         result[0] = Person.builder()
-                .firstName("Pam")
-                .lastName("Beesly")
-                .gender(Gender.WOMAN)
+                .firstName("Michael")
+                .lastName("Scott")
+                .gender(Gender.MAN)
                 .highSkilled(true)
                 .address(
                         Address.builder()
                                 .city("Scranton")
-                                .street("River st")
+                                .street("Duncan st")
                                 .build())
                 .build();
 
         result[1] = Person.builder()
+                .firstName("Dwight")
+                .lastName("Schrute")
+                .gender(Gender.MAN)
+                .highSkilled(true)
+                .address(
+                        Address.builder()
+                                .city("Bear Creek")
+                                .street("Schrute's farm")
+                                .build())
+                .build();
+
+        result[3] = Person.builder()
                 .firstName("Jim")
                 .lastName("Halpert")
                 .gender(Gender.MAN)
@@ -121,7 +985,26 @@ class ArrayHandlerTestNMaxPerson {
                                 .build())
                 .build();
 
-        result[3] = Person.builder()
+        input[4] = Person.builder()
+                .firstName("Pam")
+                .lastName("Beesly")
+                .gender(Gender.WOMAN)
+                .highSkilled(true)
+                .address(
+                        Address.builder()
+                                .city("Scranton")
+                                .street("River st")
+                                .build())
+                .build();
+        assertEquals(result, arrayHandler.getMax(input, 8));
+
+    }
+
+    @Test
+    @DisplayName("Not enough different elements in the input array")
+    void getMaxNotEnoughDifferentElementsInInput() {
+        Person[] input = new Person[7];
+        input[0] = Person.builder()
                 .firstName("Dwight")
                 .lastName("Schrute")
                 .gender(Gender.MAN)
@@ -133,7 +1016,7 @@ class ArrayHandlerTestNMaxPerson {
                                 .build())
                 .build();
 
-        result[4] = Person.builder()
+        input[1] = Person.builder()
                 .firstName("Michael")
                 .lastName("Scott")
                 .gender(Gender.MAN)
@@ -145,15 +1028,183 @@ class ArrayHandlerTestNMaxPerson {
                                 .build())
                 .build();
 
-        assertEquals(result, arrayHandler.getMax(input,4));
+        input[2] = Person.builder()
+                .firstName("Michael")
+                .lastName("Scott")
+                .gender(Gender.MAN)
+                .highSkilled(true)
+                .address(
+                        Address.builder()
+                                .city("Scranton")
+                                .street("Duncan st")
+                                .build())
+                .build();
+
+        input[3] = Person.builder()
+                .firstName("Jim")
+                .lastName("Halpert")
+                .gender(Gender.MAN)
+                .highSkilled(true)
+                .address(
+                        Address.builder()
+                                .city("Scranton")
+                                .street("Orchard st")
+                                .build())
+                .build();
+
+        input[4] = Person.builder()
+                .firstName("Michael")
+                .lastName("Scott")
+                .gender(Gender.MAN)
+                .highSkilled(true)
+                .address(
+                        Address.builder()
+                                .city("Scranton")
+                                .street("Duncan st")
+                                .build())
+                .build();
+
+        input[5] = Person.builder()
+                .firstName("Pam")
+                .lastName("Beesly")
+                .gender(Gender.WOMAN)
+                .highSkilled(true)
+                .address(
+                        Address.builder()
+                                .city("Scranton")
+                                .street("River st")
+                                .build())
+                .build();
+
+        input[6] = Person.builder()
+                .firstName("Ryan")
+                .lastName("Howard")
+                .gender(Gender.MAN)
+                .highSkilled(true)
+                .address(
+                        Address.builder()
+                                .city("New York")
+                                .street("1st ave")
+                                .build())
+                .build();
+
+        input[7] = Person.builder()
+                .firstName("Ryan")
+                .lastName("Howard")
+                .gender(Gender.MAN)
+                .highSkilled(true)
+                .address(
+                        Address.builder()
+                                .city("New York")
+                                .street("1st ave")
+                                .build())
+                .build();
+
+        input[8] = Person.builder()
+                .firstName("Pam")
+                .lastName("Beesly")
+                .gender(Gender.WOMAN)
+                .highSkilled(true)
+                .address(
+                        Address.builder()
+                                .city("Scranton")
+                                .street("River st")
+                                .build())
+                .build();
+
+        Person[] result = new Person[4];
+
+        result[0] = Person.builder()
+                .firstName("Michael")
+                .lastName("Scott")
+                .gender(Gender.MAN)
+                .highSkilled(true)
+                .address(
+                        Address.builder()
+                                .city("Scranton")
+                                .street("Duncan st")
+                                .build())
+                .build();
+
+        result[1] = Person.builder()
+                .firstName("Dwight")
+                .lastName("Schrute")
+                .gender(Gender.MAN)
+                .highSkilled(true)
+                .address(
+                        Address.builder()
+                                .city("Bear Creek")
+                                .street("Schrute's farm")
+                                .build())
+                .build();
+
+        result[3] = Person.builder()
+                .firstName("Jim")
+                .lastName("Halpert")
+                .gender(Gender.MAN)
+                .highSkilled(true)
+                .address(
+                        Address.builder()
+                                .city("Scranton")
+                                .street("Orchard st")
+                                .build())
+                .build();
+
+        result[2] = Person.builder()
+                .firstName("Ryan")
+                .lastName("Howard")
+                .gender(Gender.MAN)
+                .highSkilled(true)
+                .address(
+                        Address.builder()
+                                .city("New York")
+                                .street("1st ave")
+                                .build())
+                .build();
+
+        input[4] = Person.builder()
+                .firstName("Pam")
+                .lastName("Beesly")
+                .gender(Gender.WOMAN)
+                .highSkilled(true)
+                .address(
+                        Address.builder()
+                                .city("Scranton")
+                                .street("River st")
+                                .build())
+                .build();
+
+        assertEquals(result, arrayHandler.getMax(input, 7));
 
     }
 
     @Test
-    @DisplayName("Some persons have empty first name and/or last name")
-    void getMaxEmptyName() {
+    @DisplayName("Empty array")
+    void getMaxEmptyArray() {
+        Person[] input = new Person[0];
+        Person[] result = new Person[1];
+
+        result[0] = Person.builder().build();
+
+        assertEquals(result, arrayHandler.getMax(input, 4));
+    }
+
+    @Test
+    @DisplayName("Null array")
+    void getMaxNullArray() {
         Person[] input = new Person[5];
-        input[0] = Person.builder()
+        Person[] result = new Person[1];
+
+        result[0] = Person.builder().build();
+
+        assertEquals(result, arrayHandler.getMax(input, 4));
+    }
+
+    @Test
+    @DisplayName("n is negative")
+    void getMaxNIsNegative() {
+        Person[] input = new Person[5];
+        input[1] = Person.builder()
                 .firstName("Michael")
                 .lastName("Scott")
                 .gender(Gender.MAN)
@@ -165,9 +1216,9 @@ class ArrayHandlerTestNMaxPerson {
                                 .build())
                 .build();
 
-        input[1] = Person.builder()
+        input[0] = Person.builder()
                 .firstName("Dwight")
-                .lastName("")
+                .lastName("Schrute")
                 .gender(Gender.MAN)
                 .highSkilled(true)
                 .address(
@@ -178,7 +1229,7 @@ class ArrayHandlerTestNMaxPerson {
                 .build();
 
         input[2] = Person.builder()
-                .firstName("")
+                .firstName("Jim")
                 .lastName("Halpert")
                 .gender(Gender.MAN)
                 .highSkilled(true)
@@ -203,7 +1254,7 @@ class ArrayHandlerTestNMaxPerson {
 
         input[4] = Person.builder()
                 .firstName("Ryan")
-                .lastName("")
+                .lastName("Howard")
                 .gender(Gender.MAN)
                 .highSkilled(true)
                 .address(
@@ -213,45 +1264,21 @@ class ArrayHandlerTestNMaxPerson {
                                 .build())
                 .build();
 
-        Person[] result = new Person[5];
+        Person[] result = new Person[4];
 
-        input[0] = Person.builder()
-                .firstName("Dwight")
-                .lastName("")
-                .gender(Gender.MAN)
-                .highSkilled(true)
-                .address(
-                        Address.builder()
-                                .city("Bear Creek")
-                                .street("Schrute's farm")
-                                .build())
-                .build();
+        final Exception ex = assertThrows(IllegalArgumentException.class,
+                () -> {
+                    arrayHandler.getMax(input, -1);
+                });
 
+        assertEquals(ex.getMessage(), "Parameter n must be >= 0");
+    }
+
+    @Test
+    @DisplayName("n is 0")
+    void getMaxNIsZero() {
+        Person[] input = new Person[5];
         input[1] = Person.builder()
-                .firstName("Ryan")
-                .lastName("")
-                .gender(Gender.MAN)
-                .highSkilled(true)
-                .address(
-                        Address.builder()
-                                .city("New York")
-                                .street("1st ave")
-                                .build())
-                .build();
-
-        input[2] = Person.builder()
-                .firstName("Pam")
-                .lastName("Beesly")
-                .gender(Gender.WOMAN)
-                .highSkilled(true)
-                .address(
-                        Address.builder()
-                                .city("Scranton")
-                                .street("River st")
-                                .build())
-                .build();
-
-        input[3] = Person.builder()
                 .firstName("Michael")
                 .lastName("Scott")
                 .gender(Gender.MAN)
@@ -263,62 +1290,60 @@ class ArrayHandlerTestNMaxPerson {
                                 .build())
                 .build();
 
-        assertEquals(result, arrayHandler.getMax(input,4));
-    }
+        input[0] = Person.builder()
+                .firstName("Dwight")
+                .lastName("Schrute")
+                .gender(Gender.MAN)
+                .highSkilled(true)
+                .address(
+                        Address.builder()
+                                .city("Bear Creek")
+                                .street("Schrute's farm")
+                                .build())
+                .build();
 
-    @Test
-    @DisplayName("All or some elements are null")
-    void getMaxNullElements() {
-    }
+        input[2] = Person.builder()
+                .firstName("Jim")
+                .lastName("Halpert")
+                .gender(Gender.MAN)
+                .highSkilled(true)
+                .address(
+                        Address.builder()
+                                .city("Scranton")
+                                .street("Orchard st")
+                                .build())
+                .build();
 
-    @Test
-    @DisplayName("Some elements the same")
-    void getMaxOneDuplicateElement() {
-    }
+        input[3] = Person.builder()
+                .firstName("Pam")
+                .lastName("Beesly")
+                .gender(Gender.WOMAN)
+                .highSkilled(true)
+                .address(
+                        Address.builder()
+                                .city("Scranton")
+                                .street("River st")
+                                .build())
+                .build();
 
-    @Test
-    @DisplayName("The biggest element at the beginning")
-    void getMaxBiggestFirst() {
-    }
+        input[4] = Person.builder()
+                .firstName("Ryan")
+                .lastName("Howard")
+                .gender(Gender.MAN)
+                .highSkilled(true)
+                .address(
+                        Address.builder()
+                                .city("New York")
+                                .street("1st ave")
+                                .build())
+                .build();
 
-    @Test
-    @DisplayName("The biggest element at the end")
-    void getMaxBiggestLast() {
-    }
+        Person[] result = new Person[1];
 
-    @Test
-    @DisplayName("Various duplicate elements")
-    void getMaxSeveralDuplicateElements() {
-    }
+        result[0] = Person.builder().build();
 
-    @Test
-    @DisplayName("Not enough elements in the input array")
-    void getMaxNotEnoughElementsInInput () {
-    }
+        assertEquals(result, arrayHandler.getMax(input, 0));
 
-    @Test
-    @DisplayName("Not enough different elements in the input array")
-    void getMaxNotEnoughDifferentElementsInInput () {
-    }
-
-    @Test
-    @DisplayName("Empty array")
-    void getMaxEmptyArray() {
-    }
-
-    @Test
-    @DisplayName("Null array")
-    void getMaxNullArray() {
-    }
-
-    @Test
-    @DisplayName("n is negative")
-    void getMaxNIsNegative() {
-    }
-
-    @Test
-    @DisplayName("n is 0")
-    void getMaxNIsZero() {
     }
 
 }
