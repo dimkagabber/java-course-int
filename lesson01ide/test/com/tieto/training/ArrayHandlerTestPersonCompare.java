@@ -3,19 +3,18 @@ package com.tieto.training;
 import com.tieto.training.person.Address;
 import com.tieto.training.person.Gender;
 import com.tieto.training.person.Person;
+import com.tieto.training.person.PersonComparator;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
+
+import java.util.Comparator;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 class ArrayHandlerTestPersonCompare {
 
-    ArrayHandler arrayHandler;
-
-    final static int FIRST_BIGGER = 1;
-    final static int EQUAL = 0;
-    final static int SECOND_BIGGER = -1;
+    PersonComparator comparator;
 
     //test data
     final Person PERSONS[] = {
@@ -56,16 +55,17 @@ class ArrayHandlerTestPersonCompare {
 
     @BeforeEach
     void init() {
-        arrayHandler = new ArrayHandler();
+        comparator = new PersonComparator();
     }
 
     @Test
     @DisplayName("basic scenario")
     void compareElements() {
+        System.out.println(comparator.compare(PERSONS[1],PERSONS[3]));
         for (int i = 0; i < PERSONS.length; i++) {
             for (int j = i+1; j < PERSONS.length-1; j++) {
-                assertTrue(arrayHandler.compareElements(PERSONS[i],PERSONS[j+1]) == FIRST_BIGGER, "expected p["+i+"] bigger than p["+(j+1)+"]");
-                assertTrue(arrayHandler.compareElements(PERSONS[j],PERSONS[i]) == SECOND_BIGGER,"expected p["+j+"] smaller than p["+i+"]");
+                assertTrue(comparator.compare(PERSONS[i],PERSONS[j+1]) > 0, "expected p["+i+"] bigger than p["+(j+1)+"]");
+                assertTrue(comparator.compare(PERSONS[j],PERSONS[i]) < 0,"expected p["+j+"] smaller than p["+i+"]");
             }
         }
     }
@@ -74,7 +74,7 @@ class ArrayHandlerTestPersonCompare {
     @DisplayName("equal elements")
     void compareElementsSomeEquial() {
         for (int i = 0; i < PERSONS.length; i++) {
-            assertTrue(arrayHandler.compareElements(PERSONS[i],PERSONS[i]) == EQUAL, "expected p["+i+"] equal to p["+i+"]");
+            assertTrue(comparator.compare(PERSONS[i],PERSONS[i]) == 0, "expected p["+i+"] equal to p["+i+"]");
         }
     }
 

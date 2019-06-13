@@ -1,15 +1,19 @@
 package com.tieto.training;
 
 import com.tieto.training.person.Person;
+import com.tieto.training.person.PersonComparator;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
+
+import java.util.Comparator;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 class ArrayHandlerTestPersonNMax {
 
     ArrayHandler arrayHandler;
+    PersonComparator comparator;
 
     //test data
     final Person P0 = Person.builder()
@@ -41,6 +45,7 @@ class ArrayHandlerTestPersonNMax {
     @BeforeEach
     void init(){
         arrayHandler = new ArrayHandler();
+        comparator = new PersonComparator();
     }
 
 @Test
@@ -48,7 +53,7 @@ class ArrayHandlerTestPersonNMax {
     void getMax(){
         Person[] input = {P4,P2,P5,P0,P3,P1};
         Person[] expected = {P0,P1,P2,P3};
-        assertArrayEquals(expected,arrayHandler.getMax(input,4));
+        assertArrayEquals(expected,arrayHandler.getMax(input,4,comparator));
             }
 
     @Test
@@ -56,7 +61,7 @@ class ArrayHandlerTestPersonNMax {
     void getMaxHasNulls(){
         Person[] input = {P4,null,P5,null,P3,P1};
         Person[] expected = {P1,P3,P4};
-        assertArrayEquals(expected,arrayHandler.getMax(input,3));
+        assertArrayEquals(expected,arrayHandler.getMax(input,3,comparator));
     }
 
     @Test
@@ -64,7 +69,7 @@ class ArrayHandlerTestPersonNMax {
     void getMaxHasDuplicates(){
         Person[] input = {P4,P1,P5,P0,P5,P1,P4,P2,P3};
         Person[] expected = {P0,P1,P2,P3};
-        assertArrayEquals(expected,arrayHandler.getMax(input,4));
+        assertArrayEquals(expected,arrayHandler.getMax(input,4,comparator));
     }
 
 }

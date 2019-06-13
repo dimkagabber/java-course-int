@@ -4,7 +4,7 @@ import org.jetbrains.annotations.NotNull;
 
 import java.util.Objects;
 
-public class Person implements Comparable {
+public class Person {
     final static int FIRST_BIGGER = 1;
     final static int EQUAL = 0;
     final static int SECOND_BIGGER = -1;
@@ -73,18 +73,6 @@ public class Person implements Comparable {
                 ", gender=" + gender +
                 ", highSkilled=" + highSkilled +
                 '}';
-    }
-
-    @Override
-    public int compareTo(@NotNull final Object o) {
-        if (this == o){
-            return EQUAL;
-        }
-
-        if(this.lastName.compareTo(o.))
-        //TODO write comparison logic, probably call another method which would have comparator in the signature
-
-        return 0;
     }
 
     public static class Builder {

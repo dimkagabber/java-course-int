@@ -1,4 +1,4 @@
-package com.tieto.training;
+/*package com.tieto.training;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Disabled;
@@ -116,4 +116,4 @@ class ArrayHandlerTestNMaxString {
         String[] result = {};
         assertArrayEquals(result, arrayHandler.getMax(input, 0));
     }
-}
+}*/

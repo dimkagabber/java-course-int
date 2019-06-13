@@ -12,7 +12,7 @@ import org.junit.jupiter.api.Test;
 import javax.sound.midi.Soundbank;
 
 import static org.junit.jupiter.api.Assertions.*;
-
+/*
 @Disabled
 class ArrayHandlerTestNMaxPerson {
 
@@ -1374,3 +1374,4 @@ class ArrayHandlerTestNMaxPerson {
     }
 
 }
+ */

@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 import static org.junit.jupiter.api.Assertions.assertEquals;
-
+/*
 @Disabled
 class ArrayHandlerTestNMaxDouble {
 
@@ -18,9 +18,6 @@ class ArrayHandlerTestNMaxDouble {
         arrayHandler = new ArrayHandler();
     }
 
-//-----------------------------------
-    //tests for: double[] getMax(double[], int)
-    //-----------------------------------
 
     @Test
     @DisplayName("double getMax(double[],int) basic scenario")
@@ -143,4 +140,4 @@ class ArrayHandlerTestNMaxDouble {
                 });
         assertEquals("Not all entered values are doubles", ex.getMessage());
     }
-}
+}*/
