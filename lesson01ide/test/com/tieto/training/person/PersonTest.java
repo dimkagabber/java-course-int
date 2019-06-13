@@ -34,11 +34,12 @@ class PersonTest {
                 .highSkilled(true)
                 .build();
 
+        System.out.println("p1: " + p1);
+        System.out.println("p2: " + p2);
+
         assertEquals(p1,p2); // have the same content
         assertNotSame(p1,p2); // aren't the same object
 
-        System.out.println("p1: " + p1);
-        System.out.println("p2: " + p2);
     }
 
 }

@@ -2,8 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c55e964d-04f9-40ce-99ce-a15149ba935f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/com/tieto/training/ArrayHandlerOld.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/com/tieto/training/ArrayHandlerTestPersonCompare.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/com/tieto/training/ArrayHandlerTestPersonNMax.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/lesson01ide/com/tieto/training/ArrayHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lesson01ide/com/tieto/training/ArrayHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lesson01ide/com/tieto/training/person/Gender.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lesson01ide/com/tieto/training/person/Gender.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lesson01ide/com/tieto/training/person/Person$Builder.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lesson01ide/com/tieto/training/person/Person$Builder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lesson01ide/com/tieto/training/person/Person.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lesson01ide/com/tieto/training/person/Person.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/lesson01ide/com/tieto/training/ArrayHandlerTestNMaxDouble.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/lesson01ide/com/tieto/training/ArrayHandlerTestNMaxString.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/lesson01ide/com/tieto/training/person/PersonTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/lesson01ide/com/tieto/training/person/PersonTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/tieto/training/ArrayHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tieto/training/ArrayHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/tieto/training/person/Gender.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tieto/training/person/Gender.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/tieto/training/person/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tieto/training/person/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/tieto/training/ArrayHandlerTestNMaxDouble.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/tieto/training/ArrayHandlerTestNMaxDouble.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/com/tieto/training/ArrayHandlerTestNMaxPerson.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/tieto/training/ArrayHandlerTestNMaxPerson.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/tieto/training/ArrayHandlerTestNMaxString.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/tieto/training/ArrayHandlerTestNMaxString.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/tieto/training/person/PersonTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/tieto/training/person/PersonTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,92 +36,19 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/tieto/training/ArrayHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="4" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#5622#5623#0" expanded="true" />
-                <element signature="e#5665#5666#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="425">
+              <caret line="50" column="49" lean-forward="true" selection-start-line="50" selection-start-column="49" selection-end-line="50" selection-end-column="49" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/test/com/tieto/training/ArrayHandlerTestNMaxPerson.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="328" column="9" lean-forward="true" selection-start-line="328" selection-start-column="9" selection-end-line="328" selection-end-column="9" />
-              <folding>
-                <element signature="e#289#290#0" expanded="true" />
-                <element signature="e#324#325#0" expanded="true" />
-                <element signature="method#getMaxBasic#0;class#ArrayHandlerTestNMaxPerson#0" />
-                <element signature="method#getMaxBasic#1;class#ArrayHandlerTestNMaxPerson#0" />
-                <element signature="method#getMaxNullElements#0;class#ArrayHandlerTestNMaxPerson#0" />
-                <element signature="method#getMaxOneDuplicateElement#0;class#ArrayHandlerTestNMaxPerson#0" />
-                <element signature="method#getMaxBasic#1;class#ArrayHandlerTestNMaxPerson#0" />
-                <element signature="method#getMaxBiggestLast#0;class#ArrayHandlerTestNMaxPerson#0" />
-                <element signature="method#getMaxSeveralDuplicateElements#0;class#ArrayHandlerTestNMaxPerson#0" />
-                <element signature="method#getMaxNotEnoughElementsInInput#0;class#ArrayHandlerTestNMaxPerson#0" />
-                <element signature="method#getMaxNotEnoughDifferentElementsInInput#0;class#ArrayHandlerTestNMaxPerson#0" />
-                <element signature="method#getMaxNullArray#0;class#ArrayHandlerTestNMaxPerson#0" />
-                <element signature="method#getMaxNIsZero#0;class#ArrayHandlerTestNMaxPerson#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/com/tieto/training/ArrayHandlerTestNMaxString.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="609">
-              <caret line="102" column="29" lean-forward="true" selection-start-line="102" selection-start-column="8" selection-end-line="102" selection-end-column="29" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/com/tieto/training/person/PersonTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="561">
-              <caret line="33" column="34" selection-start-line="33" selection-start-column="34" selection-end-line="33" selection-end-column="34" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/tieto/training/person/Person.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1224">
-              <caret line="78" column="18" selection-start-line="78" selection-start-column="18" selection-end-line="78" selection-end-column="18" />
+            <state relative-caret-position="392">
+              <caret line="83" column="37" selection-start-line="83" selection-start-column="37" selection-end-line="83" selection-end-column="37" />
               <folding>
-                <element signature="e#300#301#0" expanded="true" />
-                <element signature="e#336#337#0" expanded="true" />
-                <element signature="e#2083#2084#0" expanded="true" />
-                <element signature="e#2169#2170#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/tieto/training/person/Address.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
-              <folding>
-                <element signature="e#299#300#0" expanded="true" />
-                <element signature="e#335#336#0" expanded="true" />
-                <element signature="e#702#703#0" expanded="true" />
-                <element signature="e#750#751#0" expanded="true" />
-                <element signature="e#1121#1122#0" expanded="true" />
-                <element signature="e#1170#1171#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -157,33 +100,37 @@
         <option value="$PROJECT_DIR$/test/com/tieto/training/ArrayHandlerTest.java" />
         <option value="$PROJECT_DIR$/test/com/tieto/training/ArrayHandlerTestMax.java" />
         <option value="$PROJECT_DIR$/test/com/tieto/training/ArrayHandlerTestMaxDouble.java" />
-        <option value="$PROJECT_DIR$/test/com/tieto/training/ArrayHandlerTestNMaxDouble.java" />
         <option value="$PROJECT_DIR$/src/com/tieto/training/ArrayHandlerCommon.java" />
-        <option value="$PROJECT_DIR$/test/com/tieto/training/ArrayHandlerTestNMaxString.java" />
-        <option value="$PROJECT_DIR$/src/com/tieto/training/person/Gender.java" />
-        <option value="$PROJECT_DIR$/test/com/tieto/training/person/PersonTest.java" />
-        <option value="$PROJECT_DIR$/src/com/tieto/training/person/Person.java" />
         <option value="$PROJECT_DIR$/src/com/tieto/training/person/Address.java" />
         <option value="$PROJECT_DIR$/test/com/tieto/training/ArrayHandlerTestNPerson.java" />
-        <option value="$PROJECT_DIR$/src/com/tieto/training/ArrayHandler.java" />
+        <option value="$PROJECT_DIR$/src/com/tieto/training/person/Gender.java" />
+        <option value="$PROJECT_DIR$/test/com/tieto/training/person/PersonTest.java" />
+        <option value="$PROJECT_DIR$/test/com/tieto/training/ArrayHandlerTestPersonNMax.java" />
+        <option value="$PROJECT_DIR$/test/com/tieto/training/ArrayHandlerTestPersonCompare.java" />
+        <option value="$PROJECT_DIR$/src/com/tieto/training/ArrayHandlerOld.java" />
+        <option value="$PROJECT_DIR$/test/com/tieto/training/ArrayHandlerTestNMaxDouble.java" />
+        <option value="$PROJECT_DIR$/test/com/tieto/training/ArrayHandlerTestNMaxString.java" />
         <option value="$PROJECT_DIR$/test/com/tieto/training/ArrayHandlerTestNMaxPerson.java" />
+        <option value="$PROJECT_DIR$/src/com/tieto/training/ArrayHandler.java" />
+        <option value="$PROJECT_DIR$/src/com/tieto/training/person/Person.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-1184" />
-    <option name="y" value="-1370" />
-    <option name="width" value="1936" />
-    <option name="height" value="1216" />
+    <option name="x" value="-799" />
+    <option name="y" value="-884" />
+    <option name="width" value="973" />
+    <option name="height" value="576" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -231,6 +178,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -280,7 +228,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ArrayHandlerTestNMaxPerson">
+  <component name="RunManager" selected="JUnit.ArrayHandlerTestPersonNMax">
     <configuration name="RunArrayHandler / The array contain only negative values" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="com.tieto.training.RunArrayHandler" />
       <module name="lesson01ide" />
@@ -328,25 +276,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ArrayHandlerTestNMaxDouble" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="lesson01ide" />
-      <option name="PACKAGE_NAME" value="com.tieto.training" />
-      <option name="MAIN_CLASS_NAME" value="com.tieto.training.ArrayHandlerTestNMaxDouble" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ArrayHandlerTestNMaxDouble.testGetMaxNBiggestAtTheEnd" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="lesson01ide" />
-      <option name="PACKAGE_NAME" value="com.tieto.training" />
-      <option name="MAIN_CLASS_NAME" value="com.tieto.training.ArrayHandlerTestNMaxDouble" />
-      <option name="METHOD_NAME" value="testGetMaxNBiggestAtTheEnd" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="ArrayHandlerTestNMaxPerson" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="lesson01ide" />
       <option name="PACKAGE_NAME" value="com.tieto.training" />
@@ -356,19 +285,40 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PersonTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ArrayHandlerTestNMaxPerson.getMaxEmptyArray" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="lesson01ide" />
-      <option name="PACKAGE_NAME" value="com.tieto.training.person" />
-      <option name="MAIN_CLASS_NAME" value="com.tieto.training.person.PersonTest" />
+      <option name="PACKAGE_NAME" value="com.tieto.training" />
+      <option name="MAIN_CLASS_NAME" value="com.tieto.training.ArrayHandlerTestNMaxPerson" />
+      <option name="METHOD_NAME" value="getMaxEmptyArray" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ArrayHandlerTestPersonCompare" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="lesson01ide" />
+      <option name="PACKAGE_NAME" value="com.tieto.training" />
+      <option name="MAIN_CLASS_NAME" value="com.tieto.training.ArrayHandlerTestPersonCompare" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="com.tieto.training in lesson01ide" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ArrayHandlerTestPersonNMax" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="lesson01ide" />
       <option name="PACKAGE_NAME" value="com.tieto.training" />
-      <option name="TEST_OBJECT" value="package" />
+      <option name="MAIN_CLASS_NAME" value="com.tieto.training.ArrayHandlerTestPersonNMax" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ArrayHandlerTestPersonNMax.getMax" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="lesson01ide" />
+      <option name="PACKAGE_NAME" value="com.tieto.training" />
+      <option name="MAIN_CLASS_NAME" value="com.tieto.training.ArrayHandlerTestPersonNMax" />
+      <option name="METHOD_NAME" value="getMax" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -380,19 +330,19 @@
       <item itemvalue="Application.RunArrayHandler / The array contains the maximum element as the first" />
       <item itemvalue="Application.RunArrayHandler / The array contains the maximum element as the last" />
       <item itemvalue="Application.RunArrayHandler / The array is empty" />
-      <item itemvalue="JUnit.ArrayHandlerTestNMaxDouble" />
-      <item itemvalue="JUnit.ArrayHandlerTestNMaxDouble.testGetMaxNBiggestAtTheEnd" />
       <item itemvalue="JUnit.ArrayHandlerTestNMaxPerson" />
-      <item itemvalue="JUnit.PersonTest" />
-      <item itemvalue="JUnit.com.tieto.training in lesson01ide" />
+      <item itemvalue="JUnit.ArrayHandlerTestNMaxPerson.getMaxEmptyArray" />
+      <item itemvalue="JUnit.ArrayHandlerTestPersonCompare" />
+      <item itemvalue="JUnit.ArrayHandlerTestPersonNMax" />
+      <item itemvalue="JUnit.ArrayHandlerTestPersonNMax.getMax" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ArrayHandlerTestPersonNMax" />
         <item itemvalue="JUnit.ArrayHandlerTestNMaxPerson" />
-        <item itemvalue="JUnit.PersonTest" />
-        <item itemvalue="JUnit.com.tieto.training in lesson01ide" />
-        <item itemvalue="JUnit.ArrayHandlerTestNMaxDouble" />
-        <item itemvalue="JUnit.ArrayHandlerTestNMaxDouble.testGetMaxNBiggestAtTheEnd" />
+        <item itemvalue="JUnit.ArrayHandlerTestPersonCompare" />
+        <item itemvalue="JUnit.ArrayHandlerTestPersonNMax.getMax" />
+        <item itemvalue="JUnit.ArrayHandlerTestNMaxPerson.getMaxEmptyArray" />
       </list>
     </recent_temporary>
   </component>
@@ -414,46 +364,62 @@
       <option name="project" value="LOCAL" />
       <updated>1559836321762</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="finalized tests">
+      <created>1559917597176</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1559917597176</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="PersonTest - 2019.06.03 at 17h 53m 00s.xml">
-      <configuration name="PersonTest" configurationId="JUnit" />
+    <history-entry file="ArrayHandlerTestPersonNMax - 2019.06.10 at 17h 38m 00s.xml">
+      <configuration name="ArrayHandlerTestPersonNMax" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PersonTest - 2019.06.03 at 17h 53m 48s.xml">
-      <configuration name="PersonTest" configurationId="JUnit" />
+    <history-entry file="ArrayHandlerTestPersonNMax - 2019.06.10 at 17h 38m 49s.xml">
+      <configuration name="ArrayHandlerTestPersonNMax" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PersonTest - 2019.06.03 at 19h 00m 58s.xml">
-      <configuration name="PersonTest" configurationId="JUnit" />
+    <history-entry file="ArrayHandlerTestPersonNMax_getMax - 2019.06.10 at 17h 39m 22s.xml">
+      <configuration name="ArrayHandlerTestPersonNMax.getMax" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PersonTest - 2019.06.04 at 08h 23m 52s.xml">
-      <configuration name="PersonTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="PersonTest - 2019.06.04 at 08h 24m 26s.xml">
-      <configuration name="PersonTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="PersonTest - 2019.06.06 at 14h 14m 24s.xml">
-      <configuration name="PersonTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="PersonTest - 2019.06.06 at 14h 16m 46s.xml">
-      <configuration name="PersonTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="PersonTest - 2019.06.06 at 14h 17m 19s.xml">
-      <configuration name="PersonTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ArrayHandlerTestNMaxPerson - 2019.06.06 at 17h 45m 44s.xml">
+    <history-entry file="ArrayHandlerTestNMaxPerson - 2019.06.10 at 17h 40m 00s.xml">
       <configuration name="ArrayHandlerTestNMaxPerson" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ArrayHandlerTestNMaxPerson - 2019.06.06 at 17h 46m 14s.xml">
-      <configuration name="ArrayHandlerTestNMaxPerson" configurationId="JUnit" />
+    <history-entry file="ArrayHandlerTestPersonNMax - 2019.06.10 at 17h 40m 11s.xml">
+      <configuration name="ArrayHandlerTestPersonNMax" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="ArrayHandlerTestPersonNMax - 2019.06.10 at 17h 40m 59s.xml">
+      <configuration name="ArrayHandlerTestPersonNMax" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ArrayHandlerTestPersonNMax - 2019.06.10 at 17h 45m 51s.xml">
+      <configuration name="ArrayHandlerTestPersonNMax" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ArrayHandlerTestPersonNMax_getMax - 2019.06.10 at 17h 45m 53s.xml">
+      <configuration name="ArrayHandlerTestPersonNMax.getMax" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ArrayHandlerTestPersonNMax - 2019.06.10 at 17h 46m 02s.xml">
+      <configuration name="ArrayHandlerTestPersonNMax" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ArrayHandlerTestPersonCompare - 2019.06.10 at 17h 51m 44s.xml">
+      <configuration name="ArrayHandlerTestPersonCompare" configurationId="JUnit" />
+    </history-entry>
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="-1184" y="-1370" width="1936" height="1216" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20469083" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21162046" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Learn" order="3" />
@@ -463,15 +429,15 @@
       <window_info id="Capture Tool" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32963988" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.22345337" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3961219" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.2580645" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.18740399" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info active="true" anchor="bottom" id="TODO" order="6" visible="true" weight="0.17913204" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32963988" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="9" visible="true" weight="0.07663897" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.32502308" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.20498616" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32409972" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.24980047" />
@@ -482,7 +448,7 @@
       <window_info anchor="right" id="Theme Preview" order="7" />
     </layout>
     <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19616205" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20895523" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Learn" order="3" />
@@ -491,19 +457,19 @@
       <window_info id="Image Layers" order="6" />
       <window_info id="Capture Tool" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32502308" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.48384118" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32963988" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.23915051" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3961219" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.32871652" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.20498616" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32502308" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.24980047" />
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="Maven" order="4" />
       <window_info anchor="right" id="Palette&#9;" order="5" />
@@ -513,7 +479,26 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="value class added with builder and first tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="value class added with builder and first tests" />
+    <MESSAGE value="finalized tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="finalized tests" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/test/com/tieto/training/ArrayHandlerTestNMaxPerson.java</url>
+          <line>966</line>
+          <properties />
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/tieto/training/person/Person.java</url>
+          <line>55</line>
+          <properties />
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/com/tieto/training/GetMaxFromArray.java" />
@@ -545,31 +530,7 @@
     <entry file="file://$PROJECT_DIR$/src/com/tieto/training/RunArrayHandler.java" />
     <entry file="file://$PROJECT_DIR$/test/com/tieto/training/ArrayHandlerTestMaxDouble.java" />
     <entry file="file://$USER_HOME$/AppData/Local/Temp/Temp1_lessonR01 (002).zip/src/com/tieto/training/ArrayHandler.java" />
-    <entry file="jar://$MAVEN_REPOSITORY$/org/junit/platform/junit-platform-commons/1.5.0-M1/junit-platform-commons-1.5.0-M1.jar!/org/junit/platform/commons/util/ReflectionUtils.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4947">
-          <caret line="356" selection-start-line="356" selection-end-line="356" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/tieto/training/ArrayHandlerCommon.java" />
-    <entry file="file://$PROJECT_DIR$/test/com/tieto/training/ArrayHandlerTestNMaxDouble.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="22" column="9" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/tieto/training/person/Gender.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="9" lean-forward="true" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/junit/jupiter/junit-jupiter-api/5.5.0-M1/junit-jupiter-api-5.5.0-M1.jar!/org/junit/jupiter/api/AssertNotEquals.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -588,23 +549,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/tieto/training/person/Person.java">
+    <entry file="file://$PROJECT_DIR$/src/com/tieto/training/person/Gender.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1224">
-          <caret line="78" column="18" selection-start-line="78" selection-start-column="18" selection-end-line="78" selection-end-column="18" />
-          <folding>
-            <element signature="e#300#301#0" expanded="true" />
-            <element signature="e#336#337#0" expanded="true" />
-            <element signature="e#2083#2084#0" expanded="true" />
-            <element signature="e#2169#2170#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="85">
+          <caret line="5" column="9" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/junit/platform/junit-platform-commons/1.5.0-M1/junit-platform-commons-1.5.0-M1.jar!/org/junit/platform/commons/util/ReflectionUtils.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="356" selection-start-line="356" selection-end-line="356" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/tieto/training/person/Address.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
-          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
           <folding>
             <element signature="e#299#300#0" expanded="true" />
             <element signature="e#335#336#0" expanded="true" />
@@ -618,30 +580,42 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test/com/tieto/training/person/PersonTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="33" column="34" selection-start-line="33" selection-start-column="34" selection-end-line="33" selection-end-column="34" />
+        <state relative-caret-position="161">
+          <caret line="14" column="8" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/tieto/training/ArrayHandler.java">
+    <entry file="file://$PROJECT_DIR$/test/com/tieto/training/ArrayHandlerTestPersonNMax.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="4" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#5622#5623#0" expanded="true" />
-            <element signature="e#5665#5666#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="731">
+          <caret line="50" selection-start-line="50" selection-end-line="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/tieto/training/ArrayHandlerOld.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-340">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/com/tieto/training/ArrayHandlerTestNMaxString.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="609">
-          <caret line="102" column="29" lean-forward="true" selection-start-line="102" selection-start-column="8" selection-end-line="102" selection-end-column="29" />
+        <state relative-caret-position="136">
+          <caret line="9" column="9" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/com/tieto/training/ArrayHandlerTestNMaxDouble.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="227">
+          <caret line="30" column="54" selection-start-line="30" selection-start-column="54" selection-end-line="30" selection-end-column="54" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -650,22 +624,49 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test/com/tieto/training/ArrayHandlerTestNMaxPerson.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="328" column="9" lean-forward="true" selection-start-line="328" selection-start-column="9" selection-end-line="328" selection-end-column="9" />
+        <state relative-caret-position="68">
+          <caret line="15" column="9" lean-forward="true" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
           <folding>
-            <element signature="e#289#290#0" expanded="true" />
-            <element signature="e#324#325#0" expanded="true" />
-            <element signature="method#getMaxBasic#0;class#ArrayHandlerTestNMaxPerson#0" />
-            <element signature="method#getMaxBasic#1;class#ArrayHandlerTestNMaxPerson#0" />
+            <element signature="method#getMaxEmptyName#0;class#ArrayHandlerTestNMaxPerson#0" />
             <element signature="method#getMaxNullElements#0;class#ArrayHandlerTestNMaxPerson#0" />
             <element signature="method#getMaxOneDuplicateElement#0;class#ArrayHandlerTestNMaxPerson#0" />
-            <element signature="method#getMaxBasic#1;class#ArrayHandlerTestNMaxPerson#0" />
+            <element signature="method#getMaxBiggestFirst#0;class#ArrayHandlerTestNMaxPerson#0" />
             <element signature="method#getMaxBiggestLast#0;class#ArrayHandlerTestNMaxPerson#0" />
             <element signature="method#getMaxSeveralDuplicateElements#0;class#ArrayHandlerTestNMaxPerson#0" />
             <element signature="method#getMaxNotEnoughElementsInInput#0;class#ArrayHandlerTestNMaxPerson#0" />
             <element signature="method#getMaxNotEnoughDifferentElementsInInput#0;class#ArrayHandlerTestNMaxPerson#0" />
+            <element signature="method#getMaxEmptyArray#0;class#ArrayHandlerTestNMaxPerson#0" />
             <element signature="method#getMaxNullArray#0;class#ArrayHandlerTestNMaxPerson#0" />
+            <element signature="method#getMaxNIsNegative#0;class#ArrayHandlerTestNMaxPerson#0" />
             <element signature="method#getMaxNIsZero#0;class#ArrayHandlerTestNMaxPerson#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/com/tieto/training/ArrayHandlerTestPersonCompare.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="227">
+          <caret line="54" column="11" selection-start-line="54" selection-start-column="11" selection-end-line="54" selection-end-column="11" />
+          <folding>
+            <element signature="e#1695#1696#0" expanded="true" />
+            <element signature="e#1744#1745#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/tieto/training/ArrayHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="50" column="49" lean-forward="true" selection-start-line="50" selection-start-column="49" selection-end-line="50" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/tieto/training/person/Person.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="392">
+          <caret line="83" column="37" selection-start-line="83" selection-start-column="37" selection-end-line="83" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
