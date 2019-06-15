@@ -12,7 +12,7 @@ import java.util.Comparator;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class ArrayHandlerTestPersonCompare {
+class ArrayHandlerTestPersonCompareComparator {
 
     PersonComparator comparator;
 

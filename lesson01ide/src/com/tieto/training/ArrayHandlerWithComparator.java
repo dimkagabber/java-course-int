@@ -7,7 +7,7 @@ import org.jetbrains.annotations.NotNull;
 
 import java.util.Comparator;
 
-public class ArrayHandler {
+public class ArrayHandlerWithComparator {
 
     public Person[] getMax(Person[] input, int n, Comparator<Person> comparator) {
         if (n < 0) {
@@ -25,30 +25,37 @@ public class ArrayHandler {
 
         result = removeNullsFromArray(result);
 
-        return new Person[0];
+        return result;
     }
 
     private Person[] removeNullsFromArray(final Person[] array) {
-        /* TODO FIX possible error with array size */
-        int i;
-        for (i = 0; i < array.length -1 ; i++) {
+        int targetSize = array.length;
+        for (int i = 0; i < array.length -1 ; i++) {
             if (array[i] == null) {
+                targetSize = i + 1;
                 break;
             }
         }
 
-        Person[] result = new Person[i + 1];
-        System.arraycopy(array, 0, result, 0, i);
+        Person[] result = new Person[targetSize];
+        System.arraycopy(array, 0, result, 0, targetSize);
         return result;
     }
 
     private void addNextElementToResult(final Person newElement, final Person[] result, Comparator<Person> comparator) {
         for (int i = 0; i < result.length; i++) {
-            int comparisonResult = comparator.compare(newElement, result[i]);
+            if (newElement == null){
+                return;
+            }
+            if (result[i] == null){
+                result[i] = newElement;
+                return;
+            }
+            int comparisonResult = comparator.compare(result[i],newElement);
             if (comparisonResult == 0) {
                 return;
             }
-            if (comparisonResult == +1) {
+            if (comparisonResult < 0) {
                 shiftArrayContent(result, i);
                 result[i] = newElement;
                 return;

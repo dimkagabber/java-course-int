@@ -26,7 +26,7 @@ public class PersonComparator implements Comparator<Person> {
                     if (o1.getFirstName().compareTo("") == 0 ){
                         return +1;
                     }
-                    if (o1.getFirstName().compareTo("") == 0 ){
+                    if (o2.getFirstName().compareTo("") == 0 ){
                         return -1;
                     }
                 }

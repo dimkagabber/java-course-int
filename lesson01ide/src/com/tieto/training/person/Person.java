@@ -4,7 +4,7 @@ import org.jetbrains.annotations.NotNull;
 
 import java.util.Objects;
 
-public class Person {
+public class Person implements Comparable<Person> {
     final static int FIRST_BIGGER = 1;
     final static int EQUAL = 0;
     final static int SECOND_BIGGER = -1;
@@ -73,6 +73,42 @@ public class Person {
                 ", gender=" + gender +
                 ", highSkilled=" + highSkilled +
                 '}';
+    }
+
+    @Override
+    public int compareTo(@NotNull Person o) {
+        if(this == o){
+            return 0;
+        }
+
+        if (this.lastName.compareTo("") == 0 || o.getLastName().compareTo("") == 0) {
+            if(this.lastName.compareTo(o.getLastName())== 0) {
+                if (this.firstName.compareTo("") == 0 || o.getFirstName().compareTo("") == 0) {
+                    if(this.firstName.compareTo(o.getFirstName()) == 0) {
+                        return 0;
+                    }
+                    if (this.firstName.compareTo("") == 0 ){
+                        return +1;
+                    }
+                    if (o.getFirstName().compareTo("") == 0 ){
+                        return -1;
+                    }
+                }
+                return this.firstName.compareTo(o.getFirstName());
+            }
+            if (this.lastName.compareTo("") == 0 ){
+                return +1;
+            }
+            if (o.lastName.compareTo("") == 0 ){
+                return -1;
+            }
+        }
+
+        int comparisonResult = this.lastName.compareTo(o.getLastName());
+        if(comparisonResult == 0){
+            comparisonResult = this.firstName.compareTo(o.getFirstName());
+        }
+        return comparisonResult;
     }
 
     public static class Builder {

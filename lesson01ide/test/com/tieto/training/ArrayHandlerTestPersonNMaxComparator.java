@@ -3,6 +3,7 @@ package com.tieto.training;
 import com.tieto.training.person.Person;
 import com.tieto.training.person.PersonComparator;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
@@ -10,9 +11,9 @@ import java.util.Comparator;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class ArrayHandlerTestPersonNMax {
+class ArrayHandlerTestPersonNMaxComparator {
 
-    ArrayHandler arrayHandler;
+    ArrayHandlerWithComparator arrayHandler;
     PersonComparator comparator;
 
     //test data
@@ -43,33 +44,42 @@ class ArrayHandlerTestPersonNMax {
 
 
     @BeforeEach
-    void init(){
-        arrayHandler = new ArrayHandler();
+    void init() {
+        arrayHandler = new ArrayHandlerWithComparator();
         comparator = new PersonComparator();
     }
 
-@Test
-@DisplayName("basic scenario")
-    void getMax(){
-        Person[] input = {P4,P2,P5,P0,P3,P1};
-        Person[] expected = {P0,P1,P2,P3};
-        assertArrayEquals(expected,arrayHandler.getMax(input,4,comparator));
-            }
+    @Disabled
+    @Test
+    @DisplayName("basic scenario reduced for debugging")
+    void getMaxBasicSimplified() {
+        Person[] input = {P1, P2, P0};
+        Person[] expected = {P0, P1};
+        assertArrayEquals(expected, arrayHandler.getMax(input, 2, comparator));
+    }
+
+    @Test
+    @DisplayName("basic scenario")
+    void getMax() {
+        Person[] input = {P4, P2, P5, P0, P3, P1};
+        Person[] expected = {P0, P1, P2, P3};
+        assertArrayEquals(expected, arrayHandler.getMax(input, 4, comparator));
+    }
 
     @Test
     @DisplayName("has nulls")
-    void getMaxHasNulls(){
-        Person[] input = {P4,null,P5,null,P3,P1};
-        Person[] expected = {P1,P3,P4};
-        assertArrayEquals(expected,arrayHandler.getMax(input,3,comparator));
+    void getMaxHasNulls() {
+        Person[] input = {P4, null, P5, null, P3, P1};
+        Person[] expected = {P1, P3, P4};
+        assertArrayEquals(expected, arrayHandler.getMax(input, 3, comparator));
     }
 
     @Test
     @DisplayName("has equals")
-    void getMaxHasDuplicates(){
-        Person[] input = {P4,P1,P5,P0,P5,P1,P4,P2,P3};
-        Person[] expected = {P0,P1,P2,P3};
-        assertArrayEquals(expected,arrayHandler.getMax(input,4,comparator));
+    void getMaxHasDuplicates() {
+        Person[] input = {P4, P1, P5, P0, P5, P1, P4, P2, P3};
+        Person[] expected = {P0, P1, P2, P3};
+        assertArrayEquals(expected, arrayHandler.getMax(input, 4, comparator));
     }
 
 }
