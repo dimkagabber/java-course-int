@@ -17,6 +17,7 @@ public class PersonComparator implements Comparator<Person> {
             return +1;
         }
 
+        //handling of higher prio of ""
         if (o1.getLastName().compareTo("") == 0 || o2.getLastName().compareTo("") == 0) {
             if(o1.getLastName().compareTo(o2.getLastName())== 0) {
                 if (o1.getFirstName().compareTo("") == 0 || o2.getFirstName().compareTo("") == 0) {
@@ -40,6 +41,7 @@ public class PersonComparator implements Comparator<Person> {
             }
         }
 
+        //normal case
         int comparisonResult = o1.getLastName().compareTo(o2.getLastName());
         if(comparisonResult == 0){
             comparisonResult = o1.getFirstName().compareTo(o2.getFirstName());
