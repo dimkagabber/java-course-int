@@ -1,43 +1,12 @@
 package com.tieto.training;
 
-import com.tieto.training.person.Person;
-import com.tieto.training.person.PersonComparator;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-
+import static com.tieto.training.ArrayHandlerTestPersonValues.PERSONS;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 class ArrayHandlerTestPersonCompareComparable {
 
-    //test data
-    final Person PERSONS[] = {
-            Person.builder()
-                    .lastName("")
-                    .firstName("Michael")
-                    .build(),
-            Person.builder()
-                    .lastName("Scott")
-                    .firstName("Michael")
-                    .build(),
-            Person.builder()
-                    .lastName("Scott")
-                    .firstName("John")
-                    .build(),
-            Person.builder()
-                    .lastName("Schrute")
-                    .firstName("")
-                    .build(),
-            Person.builder()
-                    .lastName("Howard")
-                    .firstName(null)
-                    .build(),
-            Person.builder()
-                    .lastName("Halpert")
-                    .firstName("Jim")
-                    .build()
-    };
-    //tests
 
     @Test
     @DisplayName("basic scenario")

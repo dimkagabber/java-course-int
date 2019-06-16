@@ -5,10 +5,6 @@ import org.jetbrains.annotations.NotNull;
 import java.util.Objects;
 
 public class Person implements Comparable<Person> {
-    final static int FIRST_BIGGER = 1;
-    final static int EQUAL = 0;
-    final static int SECOND_BIGGER = -1;
-
     private final String firstName;
     private final String lastName;
     private final Address address;
@@ -19,12 +15,12 @@ public class Person implements Comparable<Person> {
         return new Builder();
     }
 
-    public Person(Builder builder){
-        this.firstName   = builder.firstName;
-        this.lastName    = builder.lastName;
-        this.gender      = builder.gender;
+    public Person(Builder builder) {
+        this.firstName = builder.firstName;
+        this.lastName = builder.lastName;
+        this.gender = builder.gender;
         this.highSkilled = builder.highSkilled;
-        this.address     = builder.address;
+        this.address = builder.address;
     }
 
     public String getFirstName() {
@@ -77,39 +73,41 @@ public class Person implements Comparable<Person> {
 
     @Override
     public int compareTo(@NotNull Person o) {
-        if(this == o){
+        if (this == o) {
             return 0;
         }
-
-        if (this.lastName.compareTo("") == 0 || o.getLastName().compareTo("") == 0) {
-            if(this.lastName.compareTo(o.getLastName())== 0) {
-                if (this.firstName.compareTo("") == 0 || o.getFirstName().compareTo("") == 0) {
-                    if(this.firstName.compareTo(o.getFirstName()) == 0) {
-                        return 0;
-                    }
-                    if (this.firstName.compareTo("") == 0 ){
-                        return +1;
-                    }
-                    if (o.getFirstName().compareTo("") == 0 ){
-                        return -1;
-                    }
-                }
-                return this.firstName.compareTo(o.getFirstName());
-            }
-            if (this.lastName.compareTo("") == 0 ){
-                return +1;
-            }
-            if (o.lastName.compareTo("") == 0 ){
-                return -1;
-            }
-        }
-
-        int comparisonResult = this.lastName.compareTo(o.getLastName());
-        if(comparisonResult == 0){
-            comparisonResult = this.firstName.compareTo(o.getFirstName());
+        int comparisonResult = compare(this.lastName, o.getLastName());
+        if (comparisonResult == 0) {
+            comparisonResult = compare(this.firstName, o.getFirstName());
         }
         return comparisonResult;
     }
+
+    private int compare(String s1, String s2) {
+        //special cases
+        if (s1 == s2) {
+            return 0;
+        }
+        if (s1 == null) {
+            return +1;
+        }
+        if (s2 == null) {
+            return -1;
+        }
+        //put here to allow following special prio comparison
+        if (s1.isEmpty() && s2.isEmpty()) {
+            return 0;
+        }
+        if (s1.isEmpty()) {
+            return +1;
+        }
+        if (s2.isEmpty()) {
+            return -1;
+        }
+        //normal comparison
+        return s1.compareTo(s2);
+    }
+
 
     public static class Builder {
         private String firstName;
@@ -143,7 +141,7 @@ public class Person implements Comparable<Person> {
             return this;
         }
 
-        public Person build(){
+        public Person build() {
             return new Person(this);
         }
 

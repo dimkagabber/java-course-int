@@ -1,4 +1,4 @@
-/*package com.tieto.training;
+package com.tieto.training;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Disabled;
@@ -7,14 +7,14 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-@Disabled
-class ArrayHandlerTestNMaxString {
+class ArrayHandlerTestNMaxGenericString {
 
-    private ArrayHandler arrayHandler;
+    private ArrayHandlerGeneric<String> arrayHandler;
+    private final StringComparatorEmptyHasPriority comparator = new StringComparatorEmptyHasPriority();
 
     @BeforeEach
     void setUp() {
-        arrayHandler = new ArrayHandler();
+        arrayHandler = new ArrayHandlerGeneric<String>();
     }
 
     @Test
@@ -22,7 +22,7 @@ class ArrayHandlerTestNMaxString {
     void testGetMaxNBasicScenario() {
         String[] input = {"BA", "ABC", "CDE", "ACE"};
         String[] result = {"CDE", "BA", "ACE"};
-        assertArrayEquals(result, arrayHandler.getMax(input, 3));
+        assertArrayEquals(result, arrayHandler.getMax(input, 3, comparator));
     }
 
     @Test
@@ -30,15 +30,15 @@ class ArrayHandlerTestNMaxString {
     void testGetMaxNHasNullElements() {
         String[] input = {"BA", null, "CDE", null};
         String[] result = {"CDE", "BA"};
-        assertArrayEquals(result, arrayHandler.getMax(input, 3));
+        assertArrayEquals(result, arrayHandler.getMax(input, 3, comparator));
     }
 
     @Test
     @DisplayName("getMax(String[], int) Some elements the same")
     void testGetMaxNSameValueSeveralTimes() {
         String[] input = {"BA", "CDE", "BA", "DAB"};
-        String[] result = {"DAB","CDE", "BA"};
-        assertArrayEquals(result, arrayHandler.getMax(input, 3));
+        String[] result = {"DAB", "CDE", "BA"};
+        assertArrayEquals(result, arrayHandler.getMax(input, 3, comparator));
     }
 
     @Test
@@ -46,7 +46,7 @@ class ArrayHandlerTestNMaxString {
     void testGetMaxNSeveralValuesSeveralTimes() {
         String[] input = {"BA", "CDE", "CDE", "BA", "DAB"};
         String[] result = {"DAB", "CDE", "BA"};
-        assertArrayEquals(result, arrayHandler.getMax(input, 3));
+        assertArrayEquals(result, arrayHandler.getMax(input, 3, comparator));
     }
 
     @Test
@@ -54,7 +54,7 @@ class ArrayHandlerTestNMaxString {
     void testGetMaxNBiggestAtTheBeginning() {
         String[] input = {"CDE", "BA", "ABC", "ACE"};
         String[] result = {"CDE", "BA", "ACE"};
-        assertArrayEquals(result, arrayHandler.getMax(input, 3));
+        assertArrayEquals(result, arrayHandler.getMax(input, 3, comparator));
     }
 
     @Test
@@ -62,7 +62,7 @@ class ArrayHandlerTestNMaxString {
     void testGetMaxNBiggestAtTheEnd() {
         String[] input = {"ACE", "BA", "ABC", "CDE"};
         String[] result = {"CDE", "BA", "ACE"};
-        assertArrayEquals(result, arrayHandler.getMax(input, 3));
+        assertArrayEquals(result, arrayHandler.getMax(input, 3, comparator));
     }
 
     @Test
@@ -70,7 +70,7 @@ class ArrayHandlerTestNMaxString {
     void testGetMaxNInputLessThanN() {
         String[] input = {"ACE", "BA", "ABC", "CDE"};
         String[] result = {"CDE", "BA", "ACE", "ABC"};
-        assertArrayEquals(result, arrayHandler.getMax(input, 7));
+        assertArrayEquals(result, arrayHandler.getMax(input, 7, comparator));
     }
 
     @Test
@@ -78,15 +78,15 @@ class ArrayHandlerTestNMaxString {
     void testGetMaxNInputWithoutDuplicatesLessThanN() {
         String[] input = {"ACE", "BA", "ABC", "ABC"};
         String[] result = {"BA", "ACE", "ABC"};
-        assertArrayEquals(result, arrayHandler.getMax(input, 4));
+        assertArrayEquals(result, arrayHandler.getMax(input, 4, comparator));
     }
 
     @Test
     @DisplayName("getMax(String[], int) Empty input")
     void testGetMaxNEmptyInput() {
-        double[] input = {};
-        double[] result = {};
-        assertArrayEquals(result, arrayHandler.getMax(input, 5));
+        String[] input = {};
+        String[] result = {};
+        assertArrayEquals(result, arrayHandler.getMax(input, 5, comparator));
     }
 
     @Test
@@ -94,7 +94,7 @@ class ArrayHandlerTestNMaxString {
     void testGetMaxNNullInput() {
         String[] input = null;
         String[] result = {};
-        assertArrayEquals(result, arrayHandler.getMax(input, 5));
+        assertArrayEquals(result, arrayHandler.getMax(input, 5, comparator));
     }
 
 
@@ -104,7 +104,7 @@ class ArrayHandlerTestNMaxString {
         String[] input = {"ACE", "BA", "ABC", "ABC"};
         final Exception ex = assertThrows(IllegalArgumentException.class,
                 () -> {
-                    arrayHandler.getMax(input, -5);
+                    arrayHandler.getMax(input, -5, comparator);
                 });
         assertEquals("Parameter n must be >= 0", ex.getMessage());
     }
@@ -114,6 +114,6 @@ class ArrayHandlerTestNMaxString {
     void testGetMaxNIsZero() {
         String[] input = {"ACE", "BA", "ABC", "ABC"};
         String[] result = {};
-        assertArrayEquals(result, arrayHandler.getMax(input, 0));
+        assertArrayEquals(result, arrayHandler.getMax(input, 0, comparator));
     }
-}*/
+}

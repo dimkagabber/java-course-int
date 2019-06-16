@@ -30,7 +30,7 @@ public class ArrayHandlerWithComparator {
 
     private Person[] removeNullsFromArray(final Person[] array) {
         int targetSize = array.length;
-        for (int i = 0; i < array.length -1 ; i++) {
+        for (int i = 0; i < array.length - 1; i++) {
             if (array[i] == null) {
                 targetSize = i + 1;
                 break;
@@ -44,14 +44,14 @@ public class ArrayHandlerWithComparator {
 
     private void addNextElementToResult(final Person newElement, final Person[] result, Comparator<Person> comparator) {
         for (int i = 0; i < result.length; i++) {
-            if (newElement == null){
+            if (newElement == null) {
                 return;
             }
-            if (result[i] == null){
+            if (result[i] == null) {
                 result[i] = newElement;
                 return;
             }
-            int comparisonResult = comparator.compare(result[i],newElement);
+            int comparisonResult = comparator.compare(result[i], newElement);
             if (comparisonResult == 0) {
                 return;
             }
@@ -64,8 +64,8 @@ public class ArrayHandlerWithComparator {
     }
 
     private void shiftArrayContent(final Person[] result, final int startingPosition) {
-        for (int i = result.length - 1; i > startingPosition; i--) {
-            result[i] = result[i - 1];
+        if (result.length - startingPosition > 0) {
+            System.arraycopy(result, startingPosition, result, startingPosition + 1, result.length - 1 - startingPosition);
         }
     }
 }

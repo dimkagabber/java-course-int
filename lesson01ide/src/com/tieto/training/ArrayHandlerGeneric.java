@@ -2,7 +2,14 @@ package com.tieto.training;
 
 import java.util.Comparator;
 
-public class ArrayHandlerGeneric <T>{
+import static java.util.Comparator.*;
+
+public class ArrayHandlerGeneric<T> {
+
+    public T[] getMax(T[] input, int n) {
+        Comparator<T> naturalOrder = (Comparator<T>) Comparator.naturalOrder();
+        return getMax(input, n, naturalOrder);
+    }
 
     public T[] getMax(T[] input, int n, Comparator<T> comparator) {
         if (n < 0) {
@@ -25,9 +32,10 @@ public class ArrayHandlerGeneric <T>{
 
     private T[] removeNullsFromArray(final T[] array) {
         int targetSize = array.length;
-        for (int i = 0; i < array.length -1 ; i++) {
+        for (int i = 0; i < array.length; i++) {
             if (array[i] == null) {
-                targetSize = i + 1;
+                //targetSize = i + 1;
+                targetSize = i;
                 break;
             }
         }
@@ -39,14 +47,14 @@ public class ArrayHandlerGeneric <T>{
 
     private void addNextElementToResult(final T newElement, final T[] result, Comparator<T> comparator) {
         for (int i = 0; i < result.length; i++) {
-            if (newElement == null){
+            if (newElement == null) {
                 return;
             }
-            if (result[i] == null){
+            if (result[i] == null) {
                 result[i] = newElement;
                 return;
             }
-            int comparisonResult = comparator.compare(result[i],newElement);
+            int comparisonResult = comparator.compare(result[i], newElement);
             if (comparisonResult == 0) {
                 return;
             }
