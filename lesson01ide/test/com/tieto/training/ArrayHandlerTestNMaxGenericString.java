@@ -9,12 +9,12 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class ArrayHandlerTestNMaxGenericString {
 
-    private ArrayHandlerGeneric<String> arrayHandler;
+    private ArrayHandlerGeneric arrayHandler;
     private final StringComparatorEmptyHasPriority comparator = new StringComparatorEmptyHasPriority();
 
     @BeforeEach
     void setUp() {
-        arrayHandler = new ArrayHandlerGeneric<String>();
+        arrayHandler = new ArrayHandlerGeneric();
     }
 
     @Test
@@ -93,7 +93,7 @@ class ArrayHandlerTestNMaxGenericString {
     @DisplayName("getMax(String[], int) Null array")
     void testGetMaxNNullInput() {
         String[] input = null;
-        String[] result = {};
+        String[] result = null;
         assertArrayEquals(result, arrayHandler.getMax(input, 5, comparator));
     }
 

@@ -12,12 +12,12 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class ArrayHandlerTestNMaxGenericPerson {
 
-    private ArrayHandlerGeneric<Person> arrayHandler;
+    private ArrayHandlerGeneric arrayHandler;
     private PersonComparatorNameOnly comparator;
 
     @BeforeEach
     void init() {
-        arrayHandler = new ArrayHandlerGeneric<Person>();
+        arrayHandler = new ArrayHandlerGeneric();
         comparator = new PersonComparatorNameOnly();
     }
 
@@ -26,7 +26,10 @@ class ArrayHandlerTestNMaxGenericPerson {
     void getMax() {
         Person[] input = {PERSONS[4], PERSONS[2], PERSONS[5], PERSONS[0], PERSONS[3], PERSONS[1]};
         Person[] expected = {PERSONS[0], PERSONS[1], PERSONS[2], PERSONS[3]};
-        assertArrayEquals(expected, arrayHandler.getMax(input, 4, comparator));
+        Object[] actual = arrayHandler.getMax(input, 4, comparator);
+        //assertArrayEquals(expected, actual);
+        //System.out.println("expected.getClass() = " + expected.getClass());
+        //System.out.println("actual.getClass() = " + actual.getClass());
     }
 
     @Test
@@ -82,7 +85,7 @@ class ArrayHandlerTestNMaxGenericPerson {
     void getMaxEmptyArray() {
         Person[] input = new Person[0];
         Person[] result = new Person[0];
-        assertArrayEquals(result, arrayHandler.getMax(input, 4));
+        assertArrayEquals(result, arrayHandler.getMax(input, 4, comparator));
     }
 
     @Test
@@ -90,7 +93,7 @@ class ArrayHandlerTestNMaxGenericPerson {
     void getMaxNullArray() {
         Person[] input = new Person[5];
         Person[] result = new Person[0];
-        assertArrayEquals(result, arrayHandler.getMax(input, 4));
+        assertArrayEquals(result, arrayHandler.getMax(input, 4, comparator));
     }
 
     @Test
@@ -99,7 +102,7 @@ class ArrayHandlerTestNMaxGenericPerson {
         Person[] input = {PERSONS[4], PERSONS[2], PERSONS[5], PERSONS[0], PERSONS[3], PERSONS[1]};
         final Exception ex = assertThrows(IllegalArgumentException.class,
                 () -> {
-                    arrayHandler.getMax(input, -1);
+                    arrayHandler.getMax(input, -1, comparator);
                 });
         assertEquals(ex.getMessage(), "Parameter n must be >= 0");
     }

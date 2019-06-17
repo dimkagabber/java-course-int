@@ -11,6 +11,9 @@ public class StringComparatorEmptyHasPriority implements Comparator<String> {
         if(o1 == null) {
             return +1;
         }
+        if(o1.compareTo("") == 0) {
+            return +1;
+        }
         return o1.compareTo(o2);
     }
 }
