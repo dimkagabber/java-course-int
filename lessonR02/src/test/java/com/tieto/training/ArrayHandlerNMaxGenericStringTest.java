@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class ArrayHandlerTestNMaxGenericString {
+class ArrayHandlerNMaxGenericStringTest {
 
     private ArrayHandlerGeneric arrayHandler;
     private final StringComparatorEmptyHasPriority comparator = new StringComparatorEmptyHasPriority();

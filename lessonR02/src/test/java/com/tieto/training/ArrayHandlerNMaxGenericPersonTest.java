@@ -3,14 +3,13 @@ package com.tieto.training;
 import com.tieto.training.person.Person;
 import com.tieto.training.person.PersonComparatorNameOnly;
 import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
-import static com.tieto.training.ArrayHandlerTestPersonValues.PERSONS;
+import static com.tieto.training.ArrayHandlerPersonValuesTest.PERSONS;
 import static org.junit.jupiter.api.Assertions.*;
 
-class ArrayHandlerTestNMaxGenericPerson {
+class ArrayHandlerNMaxGenericPersonTest {
 
     private ArrayHandlerGeneric arrayHandler;
     private PersonComparatorNameOnly comparator;
