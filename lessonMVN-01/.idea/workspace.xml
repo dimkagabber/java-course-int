@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5654cd92-05a1-4f92-8ee3-4586faf29e7a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../lesson01ide/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../lesson01ide/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lessonR01.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lessonR02/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../lessonR02/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/dummy-app/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -12,17 +13,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/dummy-app/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="11" lean-forward="true" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -76,6 +67,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -88,11 +80,64 @@
               <item name="lessonMVN-01" type="462c0819:PsiDirectoryNode" />
               <item name="dummy-app" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="lessonMVN-01" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lessonMVN-01" type="462c0819:PsiDirectoryNode" />
+              <item name="dummy-app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="lessonMVN-01" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lessonMVN-01" type="462c0819:PsiDirectoryNode" />
+              <item name="dummy-app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="lessonMVN-01" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lessonMVN-01" type="462c0819:PsiDirectoryNode" />
+              <item name="dummy-app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="lessonMVN-01" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lessonMVN-01" type="462c0819:PsiDirectoryNode" />
+              <item name="dummy-app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="practice" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="lessonMVN-01" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lessonMVN-01" type="462c0819:PsiDirectoryNode" />
+              <item name="dummy-app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="lessonMVN-01" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lessonMVN-01" type="462c0819:PsiDirectoryNode" />
+              <item name="dummy-app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="lessonMVN-01" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lessonMVN-01" type="462c0819:PsiDirectoryNode" />
+              <item name="dummy-app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="practice" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -125,7 +170,7 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1313" height="784" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25937748" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26336792" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Learn" order="3" />
@@ -150,10 +195,24 @@
     </layout>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/dummy-app/src/main/java/com/tieto/practice/App.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dummy-app/src/test/java/com/tieto/practice/AppTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/dummy-app/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="11" lean-forward="true" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="29" />
+        <state relative-caret-position="136">
+          <caret line="8" column="40" lean-forward="true" selection-start-line="8" selection-start-column="40" selection-end-line="8" selection-end-column="40" />
         </state>
       </provider>
     </entry>

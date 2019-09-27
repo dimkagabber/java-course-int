@@ -1,0 +1,40 @@
+-------------------------------------------------------------------------------
+Test set: com.tieto.training.CircleTest
+-------------------------------------------------------------------------------
+Tests run: 9, Failures: 0, Errors: 9, Skipped: 0, Time elapsed: 0.085 s <<< FAILURE! - in com.tieto.training.CircleTest
+isInsideXYLeftDownInTest  Time elapsed: 0.017 s  <<< ERROR!
+java.lang.NullPointerException
+	at com.tieto.training.CircleTest.isInsideXYLeftDownInTest(CircleTest.java:46)
+
+isInsideInXYRightUpOutTest  Time elapsed: 0.02 s  <<< ERROR!
+java.lang.NullPointerException
+	at com.tieto.training.CircleTest.isInsideInXYRightUpOutTest(CircleTest.java:30)
+
+isInsideInXYLeftDownOutTest  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.NullPointerException
+	at com.tieto.training.CircleTest.isInsideInXYLeftDownOutTest(CircleTest.java:54)
+
+isInsideSameAsCenterYesTest  Time elapsed: 0.004 s  <<< ERROR!
+java.lang.NullPointerException
+	at com.tieto.training.CircleTest.isInsideSameAsCenterYesTest(CircleTest.java:38)
+
+isInsideXYRightUpInTest  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.NullPointerException
+	at com.tieto.training.CircleTest.isInsideXYRightUpInTest(CircleTest.java:22)
+
+isInsideInXYLeftUpOutTest  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.NullPointerException
+	at com.tieto.training.CircleTest.isInsideInXYLeftUpOutTest(CircleTest.java:70)
+
+isInsideOnTheEdgeLeft  Time elapsed: 0 s  <<< ERROR!
+java.lang.NullPointerException
+	at com.tieto.training.CircleTest.isInsideOnTheEdgeLeft(CircleTest.java:86)
+
+isInsideOnTheEdgeRight  Time elapsed: 0 s  <<< ERROR!
+java.lang.NullPointerException
+	at com.tieto.training.CircleTest.isInsideOnTheEdgeRight(CircleTest.java:78)
+
+isInsideXYLeftUpInTest  Time elapsed: 0 s  <<< ERROR!
+java.lang.NullPointerException
+	at com.tieto.training.CircleTest.isInsideXYLeftUpInTest(CircleTest.java:62)
+
